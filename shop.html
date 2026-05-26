@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnistium — Магазин</title>
+    <link rel="icon" type="image/png" href="logo_s.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo_b.png" alt="Omnistium" class="logo-big">
+                    <img src="logo_s.png" alt="Omnistium" class="logo-small">
+                </a>
+            </div>
+            
+            <button class="menu-toggle" id="mobile-menu-btn">☰</button>
+            
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="modpack.html">Модпак</a></li>
+                <li><a href="rules.html">Правила</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section style="text-align: center; padding: 4rem 0;">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem;">МАГАЗИН ПРОЄКТУ</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 2rem;">Підтримайте розвиток сервера Omnistium та отримайте додаткові бонуси.</p>
+        </section>
+
+        <section class="grid">
+            <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; gap: 1.5rem;">
+                <div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.25rem; color: var(--text-main);">Проходка на сервер</h3>
+                    <div style="font-size: 1.8rem; font-weight: 800; color: var(--purple-accent); margin-bottom: 1rem;">50 ₴</div>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Постійний доступ до ігрового сервера без необхідності проходити стандартний відбір анкет.</p>
+                </div>
+                <a href="https://donatello.to/your-profile" target="_blank" class="btn btn-primary" style="text-align: center; animation: none;">Придбати через Donatello</a>
+            </div>
+
+            <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; gap: 1.5rem;">
+                <div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.25rem; color: var(--text-main);">Спонсорська підписка</h3>
+                    <div style="font-size: 1.8rem; font-weight: 800; color: var(--purple-accent); margin-bottom: 1rem;">100 ₴ <span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted);">/ міс.</span></div>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Особлива роль у нашому Discord-сервері, доступ до прихованих чатів розробки та унікальний префікс в ігровому чаті.</p>
+                </div>
+                <a href="https://donatello.to/your-profile" target="_blank" class="btn" style="text-align: center;">Оформити підписку</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-socials">
+            <a href="https://discord.gg/4vzDgWzAT" target="_blank" title="Наш Discord"><i class="fab fa-discord"></i></a>
+            <a href="https://www.tiktok.com/@omnist1um" target="_blank" title="Наш TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p>&copy; <span id="current-year">2026</span> Omnistium. Всі права захищені.</p>
+        <div class="footer-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

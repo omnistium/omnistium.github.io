@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnistium — Головна</title>
+    <link rel="icon" type="image/png" href="logo_s.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo_b.png" alt="Omnistium" class="logo-big">
+                    <img src="logo_s.png" alt="Omnistium" class="logo-small">
+                </a>
+            </div>
+            
+            <button class="menu-toggle" id="mobile-menu-btn">☰</button>
+            
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="modpack.html">Модпак</a></li>
+                <li><a href="rules.html">Правила</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section style="text-align: center; padding: 4rem 0;">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem;">OMNISTIUM</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 2rem;">Геополітичний сервер на версії 1.21.1 NeoForge. Створюй корпорації, будуй дирижаблі та веди індустріальні війни.</p>
+            
+            <div class="ip-box" onclick="copyIP()">
+                <span id="server-ip">play.omnistium.net</span>
+            </div>
+            
+            <div style="margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: center;">
+                <a href="https://discord.gg/4vzDgWzAT" class="btn btn-primary" target="_blank">Подати заявку (Discord)</a>
+                <a href="modpack.html" class="btn">Отримати модпак</a>
+            </div>
+        </section>
+
+        <section style="margin-top: 6rem;">
+            <h2 style="text-align: center; font-size: 2rem; margin-bottom: 0.5rem;">Команда сервера</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 3rem;">Ті, хто створюють, розвивають та підтримують світ Omnistium.</p>
+            
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                <div class="card" style="padding: 2.2rem 1.8rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                    <h3 style="font-size: 1.35rem; color: var(--text-main); margin: 0;">Yurk0</h3>
+                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--purple-accent); font-weight: 700; margin-bottom: 0.5rem;">Головний адміністратор</div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0; line-height: 1.4;">Відповідає за розробку сайту та комунікацію з гравцями.</p>
+                </div>
+
+                <div class="card" style="padding: 2.2rem 1.8rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                    <h3 style="font-size: 1.35rem; color: var(--text-main); margin: 0;">Bledny</h3>
+                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--purple-accent); font-weight: 700; margin-bottom: 0.5rem;">Головний адміністратор</div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0; line-height: 1.4;">Відповідає за хостинг сервера та збірку.</p>
+                </div>
+
+                <div class="card" style="padding: 2.2rem 1.8rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                    <h3 style="font-size: 1.35rem; color: var(--text-main); margin: 0;">vskiy</h3>
+                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--purple-accent); font-weight: 700; margin-bottom: 0.5rem;">Discord адміністратор</div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0; line-height: 1.4;">Відповідає за Discord-сервер та прийняття анкет.</p>
+                </div>
+
+                <div class="card" style="padding: 2.2rem 1.8rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                    <h3 style="font-size: 1.35rem; color: var(--text-main); margin: 0;">ElShardoo</h3>
+                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--purple-accent); font-weight: 700; margin-bottom: 0.5rem;">Тех Адмін</div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0; line-height: 1.4;">Відповідає за дизайн проекту.</p>
+                </div>
+
+                <div class="card" style="padding: 2.2rem 1.8rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                    <h3 style="font-size: 1.35rem; color: var(--text-main); margin: 0;">Ziahar</h3>
+                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--purple-accent); font-weight: 700; margin-bottom: 0.5rem;">Тех Адмін</div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0; line-height: 1.4;">Відповідає за прийняття пропозицій та налаштування серверу.</p>
+                </div>
+
+                <div class="card" style="padding: 2.2rem 1.8rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                    <h3 style="font-size: 1.35rem; color: var(--text-main); margin: 0;">rodyaa</h3>
+                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--purple-accent); font-weight: 700; margin-bottom: 0.5rem;">РП Адміністратор</div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0; line-height: 1.4;">Відповідає за РП.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-socials">
+            <a href="https://discord.gg/4vzDgWzAT" target="_blank" title="Наш Discord"><i class="fab fa-discord"></i></a>
+            <a href="https://www.tiktok.com/@omnist1um" target="_blank" title="Наш TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p>&copy; <span id="current-year">2026</span> Omnistium. Всі права захищені.</p>
+        <div class="footer-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

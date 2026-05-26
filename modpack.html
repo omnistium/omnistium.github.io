@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnistium — Модпак</title>
+    <link rel="icon" type="image/png" href="logo_s.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo_b.png" alt="Omnistium" class="logo-big">
+                    <img src="logo_s.png" alt="Omnistium" class="logo-small">
+                </a>
+            </div>
+            
+            <button class="menu-toggle" id="mobile-menu-btn">☰</button>
+            
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="modpack.html">Модпак</a></li>
+                <li><a href="rules.html">Правила</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Технічна збірка сервера</h2>
+        <p style="color: var(--text-muted); margin-bottom: 2rem;">Базове ядро сервера: NeoForge (Версія 1.21.1). Збірка містить близько 80-100 модів, оновлених для стабільної геополітики.</p>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Лицензійні лаунчери</h3>
+                <p style="color: var(--text-muted); margin: 1rem 0;">Для Modrinth, Prism Launcher, ATLauncher або CurseForge. Автоматичне встановлення та оновлення усіх модифікацій.</p>
+                <a href="omnistium_modpack.mrpack" download class="btn btn-primary" style="width: 100%; text-align: center; animation: none;">Завантажити .mrpack</a>
+            </div>
+
+            <div class="card">
+                <h3>Універсальний архів (Для піраток)</h3>
+                <p style="color: var(--text-muted); margin: 1rem 0;">Містить папки <code>mods</code>, <code>config</code> та необхідні файли для ручного встановлення у TLauncher, Legacy або інші лаунчери.</p>
+                <a href="omnistium_modpack.zip" download class="btn" style="width: 100%; text-align: center;">Завантажити .zip архів</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-socials">
+            <a href="https://discord.gg/4vzDgWzAT" target="_blank" title="Наш Discord"><i class="fab fa-discord"></i></a>
+            <a href="https://www.tiktok.com/@omnist1um" target="_blank" title="Наш TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p>&copy; <span id="current-year">2026</span> Omnistium. Всі права захищені.</p>
+        <div class="footer-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
