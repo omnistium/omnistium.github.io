@@ -31,223 +31,428 @@
 
     <div class="rules-layout">
         <aside class="rules-sidebar">
-            <div class="sidebar-category">Minecraft правила</div>
-            <ul class="sidebar-links">
-                <li><a href="#" class="sidebar-id" data-target="mc-general">1. Загальні правила</a></li>
-                <li><a href="#" class="sidebar-id" data-target="mc-chat">2. Регламент чату</a></li>
-            </ul>
-
             <div class="sidebar-category">RP правила</div>
             <ul class="sidebar-links">
                 <li><a href="#" class="sidebar-id active" data-target="rp-principles">1. Загальні принципи</a></li>
-                <li><a href="#" class="sidebar-id" data-target="rp-economy">2. Економіка та Індустрія</a></li>
-                <li><a href="#" class="sidebar-id" data-target="rp-machinery">3. Машинобудування</a></li>
-                <li><a href="#" class="sidebar-id" data-target="rp-politics">4. Політика та Уряд</a></li>
-                <li><a href="#" class="sidebar-id" data-target="rp-war">5. Війна та Облоги</a></li>
-                <li><a href="#" class="sidebar-id" data-target="rp-rules-other">6. Табори, Повстання, Найманці</a></li>
-                <li><a href="#" class="sidebar-id" data-target="rp-administration">7. Заборони та Адміністрація</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-economy">2. Економіка</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-industry">3. Індустрія</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-machinery">4. Машинобудування</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-politics">5. Політика та Дипломатія</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-government">6. Центральний Уряд</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-parliament">7. Політична система</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-war">8. Війна та Конфлікти</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-battles">9. Регламент боїв</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-sieges">10. Регламент облог</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-camps">11. Військові табори</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-organizations">12. Організації та Найманці</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-forbidden">13. Заборонені предмети</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-admin-staff">14. RP-Адміністрація</a></li>
             </ul>
         </aside>
 
         <main class="rules-content">
-            <section id="mc-general" class="rules-section">
-                <h2>1. Загальні правила сервера</h2>
-                <p class="rules-meta">Останнє оновлення: В розробці</p>
-                <div class="rule-block">
-                    <span class="rule-number">1.1</span>
-                    <p>Тут будуть базові технічні правила вашого майнкрафт сервера (наприклад, заборона читів, багоюзу тощо).</p>
-                </div>
-            </section>
-
-            <section id="mc-chat" class="rules-section">
-                <h2>2. Регламент текстового та голосового чату</h2>
-                <p class="rules-meta">Останнє оновлення: В розробці</p>
-                <div class="rule-block">
-                    <span class="rule-number">2.1</span>
-                    <p>Тут будуть правила щодо спаму, образ, реклами та токсичної поведінки в ігрових чатах.</p>
-                </div>
-            </section>
-
             <section id="rp-principles" class="rules-section active">
-                <h2>1. Загальні принципи РП-процесу</h2>
-                <p class="rules-meta">Офіційний регламент Omnistium</p>
-                <p>Сервер базується на індустріальному РП світі з модами Create та Create: Aeronautics, з розвитком держав, економіки та військових конфліктів.</p>
+                <h2>1. ЗАГАЛЬНІ ПРИНЦИПИ</h2>
+                <div class="rule-block" style="border-left: 3px solid var(--purple-accent); background: rgba(124, 58, 237, 0.02);">
+                    <p>Сервер базується на індустріальному РП світі з модами <span style="color: var(--purple-accent); font-weight: 600;">Create</span> та <span style="color: var(--purple-accent); font-weight: 600;">Create: Aeronautics</span>, з розвиток держав, економіки та військових конфліктів.</p>
+                </div>
                 
                 <div class="rule-block">
-                    <span class="rule-number">1.1</span>
-                    <p><strong>RP-логіка:</strong> Будь-яка дія має мати RP-причину. Заборонені нелогічні або “ігрові” дії без обґрунтування. Світ розвивається через історію та наслідки дій гравців.</p>
+                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-compass" style="color: #38bdf8; margin-right: 0.5rem;"></i>Основні напрями:</p>
+                    <ul style="padding-left: 1.2rem; color: var(--text-muted);">
+                        <li>Військова система</li>
+                        <li>Індустрія</li>
+                        <li>Дипломатія</li>
+                        <li>Економіка</li>
+                    </ul>
                 </div>
+
                 <div class="rule-block">
-                    <span class="rule-number">1.2</span>
-                    <p><strong>Основні напрями розвитку:</strong> Військова система, Індустрія, Дипломатія, Економіка.</p>
+                    <span class="rule-number">1.1</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.05em;">RP-логіка</p>
+                        <p>Будь-яка дія має мати <span style="color: var(--purple-accent); font-weight: 600;">RP-причину</span></p>
+                        <p>Заборонені нелогічні або “ігрові” дії без обґрунтування</p>
+                        <p>Світ розвивається через історію та наслідки дій гравців</p>
+                    </div>
                 </div>
             </section>
 
             <section id="rp-economy" class="rules-section">
-                <h2>2. Економіка та Індустрія</h2>
-                <p class="rules-meta">Офіційний регламент Omnistium</p>
-                <h3>Економіка</h3>
+                <h2>2. ЕКОНОМІКА</h2>
                 <div class="rule-block">
-                    <span class="rule-number">2.1</span>
-                    <p><strong>Основи:</strong> Виробництво, Торгівля, Ресурси, Стабільність держав.</p>
+                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-wallet" style="color: #22c55e; margin-right: 0.5rem;"></i>Основи:</p>
+                    <ul style="padding-left: 1.2rem; color: var(--text-muted);">
+                        <li>Виробництво</li>
+                        <li>Торгівля</li>
+                        <li>Ресурси</li>
+                        <li>Стабільність держав</li>
+                    </ul>
                 </div>
-                <div class="rule-block">
-                    <span class="rule-number">2.2</span>
-                    <p><strong>Вплив війни:</strong> Військові дії призводять до падіння економіки, дефіциту ресурсів та руйнування інфраструктури.</p>
+                
+                <div class="rule-block" style="border-left: 3px solid #ef4444;">
+                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: #ef4444;"><i class="fas fa-radiation" style="margin-right: 0.5rem;"></i>Вплив війни:</p>
+                    <ul style="padding-left: 1.2rem; color: var(--text-muted);">
+                        <li>Падіння економіки</li>
+                        <li>Дефіцит ресурсів</li>
+                        <li>Руйнування інфраструктури</li>
+                    </ul>
                 </div>
+                
                 <div class="rule-block">
-                    <span class="rule-number">2.3</span>
-                    <p><strong>Заборони:</strong> Заборонено штучне руйнування економіки без RP-причини.</p>
+                    <p style="font-weight: 600; margin-bottom: 0.25rem; color: var(--text-main);">Заборони:</p>
+                    <p>Заборонено штучне руйнування економіки <span style="color: #ef4444; font-weight: 600;">без RP-причини</span></p>
                 </div>
-                <h3>Індустрія</h3>
+            </section>
+
+            <section id="rp-industry" class="rules-section">
+                <h2>3. ІНДУСТРІЯ</h2>
                 <div class="rule-block">
-                    <span class="rule-number">2.4</span>
-                    <p><strong>Статус системи:</strong> Індустрія — стратегічна, але не бойова система. Включає ферми, механізми, transport (земний/повітряний), військово-технічне забезпечення та виробничі системи.</p>
+                    <p>Індустрія - <span style="color: #38bdf8; font-weight: 600;">стратегічна</span>, але не бойова система.</p>
                 </div>
+
                 <div class="rule-block">
-                    <span class="rule-number">2.5</span>
-                    <p><strong>Роль індустрії:</strong> Розвиток загальної економіки, логістика, стабільне забезпечення діючих армій та отримання стратегічної переваги над опонентами.</p>
+                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-industry" style="color: #a855f7; margin-right: 0.5rem;"></i>Включає:</p>
+                    <ul style="padding-left: 1.2rem; color: var(--text-muted);">
+                        <li>Ферми та механізми</li>
+                        <li>Транспорт (Земний чи повітряний)</li>
+                        <li>Військова техніка</li>
+                        <li>Виробничі системи</li>
+                    </ul>
+                </div>
+
+                <div class="rule-block">
+                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-chart-line" style="color: #22c55e; margin-right: 0.5rem;"></i>Роль:</p>
+                    <ul style="padding-left: 1.2rem; color: var(--text-muted);">
+                        <li>Розвиток економіки</li>
+                        <li>Логістика</li>
+                        <li>Забезпечення армій</li>
+                        <li>Стратегічна перевага</li>
+                    </ul>
                 </div>
             </section>
 
             <section id="rp-machinery" class="rules-section">
-                <h2>3. Машинобудування та Дослідження</h2>
-                <p class="rules-meta">Офіційний регламент Omnistium</p>
-                <p>Машинобудування — технологічна складова держави, що відповідає за проектування та створення складних рухомих одиниць. Включає автотранспорт, авіабудування (дирижаблі, літаки), суднобудування та виробництво спецтехніки.</p>
-                
-                <h3>3.1 Процес створення техніки (Три етапи)</h3>
+                <h2>4. МАШИНОБУДУВАННЯ</h2>
                 <div class="rule-block">
-                    <span class="rule-number">I</span>
-                    <p><strong>Дослідження:</strong> Розробка концепції та технології. Вимагається окремий РП-пост (назва країни, точний час початку, мета). Обов'язковий час очікування — 4 години перед переходом до наступного кроку.</p>
-                </div>
-                <div class="rule-block">
-                    <span class="rule-number">II</span>
-                    <p><strong>Будівництво:</strong> Безпосередній запуск виробничого процесу у спеціальних спорудах (Ангар — для повітряного, Гараж — для наземного, Верф — для водного). Публікується РП-пост зі скріншотами, хід процесу контролюється адміністрацією.</p>
-                </div>
-                <div class="rule-block">
-                    <span class="rule-number">III</span>
-                    <p><strong>Запуск:</strong> Фінальні випробування на спеціальному полігоні (очищена площадка). Не має часового КД, але потребує підсумкового РП-посту про успішний запуск.</p>
+                    <p>Машинобудування — технологічна складова держави, що відповідає за проектування та створення складних рухомих одиниць.</p>
                 </div>
 
-                <h3>3.2 Обмеження та специфікації</h3>
                 <div class="rule-block">
-                    <span class="rule-number">3.2.1</span>
-                    <p><strong>Масове виробництво:</strong> Для серійного випуску техніки держава зобов'язана мати збудований машинобудівний завод. Звичайні гаражі чи ангари дозволяють створювати лише одиничні екземпляри.</p>
+                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-cogs" style="color: #eab308; margin-right: 0.5rem;"></i>Включає:</p>
+                    <ul style="padding-left: 1.2rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem;">
+                        <li><strong style="color: var(--text-main);">Автотранспорт:</strong> Створення вантажівок, тягачів та бронеавтомобілів.</li>
+                        <li><strong style="color: var(--text-main);">Авіабудування:</strong> Проектування літаків, дирижаблів та розвідувальних дронів.</li>
+                        <li><strong style="color: var(--text-main);">Суднобудування:</strong> Побудова військових кораблів та транспортних суден.</li>
+                        <li><strong style="color: var(--text-main);">Спецтехніка:</strong> Створення кранів, бурових установок та залізничного транспорту.</li>
+                    </ul>
                 </div>
+
                 <div class="rule-block">
-                    <span class="rule-number">3.2.2</span>
-                    <p><strong>Великогабаритні проекти:</strong> Будівництво техніки, об'єм якої перевищує 5000 блоків, дозволяється виключно на базі машинобудівного заводу (або відповідної верфі для водного транспорту).</p>
+                    <span class="rule-number">4.1</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.75rem; text-transform: uppercase; font-size: 0.9rem;">Процес створення техніки складається з трьох етапів:</p>
+                        <p style="margin-bottom: 0.5rem;"><strong style="color: var(--purple-accent);">І. Дослідження:</strong> Розробка концепції та технологій. Потребує написання РП-посту, де зазначається назва країни, точний час початку дослідження, мета розробки та очікувані характеристики. Обов'язкове КД (час очікування) — <span style="color: #eab308; font-weight: 600;">4 години</span> перед переходом до наступного етапу.</p>
+                        <p style="margin-bottom: 0.5rem;"><strong style="color: var(--purple-accent);">ІІ. Будівництво:</strong> Запуск виробничого процесу. Техніка має будуватися у спеціально відведених спорудах (<span style="color: #38bdf8;">Ангар</span> для повітряного транспорту, <span style="color: #38bdf8;">Гараж</span> для наземного, <span style="color: #38bdf8;">Верф</span> для водного). Процес супроводжується проміжними скріншотами та фіксується в РП-постах.</p>
+                        <p style="margin-bottom: 0%;"><strong style="color: var(--purple-accent);">ІІІ. Запуск:</strong> Випробування та введення в експлуатацію. Техніка виводиться на полігон (спеціально очищена площадка) для фінальної перевірки. Цей етап не має часового КД, але потребує підсумкового РП-посту про успішний запуск.</p>
+                    </div>
+                </div>
+
+                <div class="rule-block" style="border-left: 3px solid #ef4444;">
+                    <span class="rule-number" style="color: #ef4444;">4.2</span>
+                    <p>Для масового або серійного виробництва військової чи цивільної техніки держава повинна мати побудований <span style="color: var(--purple-accent); font-weight: 600;">машинобудівний завод</span>. Будівництво без заводу (в звичайних гаражах чи ангарах) дозволяє створювати лише одиничні екземпляри техніки.</p>
+                </div>
+
+                <div class="rule-block">
+                    <span class="rule-number">4.3</span>
+                    <p>Будівництво великогабаритних проектів (техніка, об'єм якої перевищує <span style="color: #ef4444; font-weight: 600;">5000 блоків</span>) дозволено виключно на базі машинобудівного заводу або відповідної верфі.</p>
                 </div>
             </section>
 
             <section id="rp-politics" class="rules-section">
-                <h2>4. Політика, Дипломатія та Центральний Уряд</h2>
-                <p class="rules-meta">Офіційний регламент Omnistium</p>
-                
-                <h3>4.1 Центральний Уряд та Комітет Цивілізацій</h3>
+                <h2>5. ПОЛІТИКА ТА ДИПЛОМАТІЯ</h2>
                 <div class="rule-block">
-                    <span class="rule-number">4.1.1</span>
-                    <p><strong>Цілі Уряду:</strong> Запобігання хаотичним війнам, нагляд за озброєнням держав, надання офіційного статусу новим країнам та регулювання торгових стандартів.</p>
-                </div>
-                <div class="rule-block">
-                    <span class="rule-number">4.1.2</span>
-                    <p><strong>Структура влади:</strong> Складається з Генеральної Ради (законодавча), Генеральної Канцелярії (реєстрація, контроль лімітів) та Верховного Суду (незалежний судовий орган).</p>
+                    <p>Політика є основою взаємодії між державами. Вона визначає стабільність регіонів та легітимність урядів.</p>
                 </div>
 
-                <h3>4.2 Політична та Партійна система</h3>
                 <div class="rule-block">
-                    <span class="rule-number">4.2.1</span>
-                    <p><strong>Генеральна Рада:</strong> Вищий міжнародний парламент у межах Комітету. Обмежений 15 мандатами. Складається з Гетьмана (Голова з правом вето), Генерального Писаря та Депутатів.</p>
-                </div>
-                <div class="rule-block">
-                    <span class="rule-number">4.2.2</span>
-                    <p><strong>Вибори:</strong> Проводяться раз на 30 днів, тривають 3 дні. Голосування анонімне, кожен гравець має 1 голос, місця розподіляються пропорційно.</p>
-                </div>
-                <div class="rule-block">
-                    <span class="rule-number">4.2.3</span>
-                    <p><strong>Вимоги до Партій:</strong> Мінімальний склад — 3 гравці, обов'язкова наявність унікальної передвиборчої програми, символіки та офіційного схвалення Канцелярією.</p>
-                </div>
-                <div class="rule-block">
-                    <span class="rule-number">4.2.4</span>
-                    <p><strong>Гетьман:</strong> Обирається Радою на 1 місяць. Має повноваження термінового скликання або розпуску Ради за наявності вагомої RP-причини, а також право вето на радикальні закони.</p>
+                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-flag" style="color: #38bdf8; margin-right: 0.5rem;"></i>Рівні відносин:</p>
+                    <ul style="padding-left: 1.2rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.25rem;">
+                        <li><span style="color: #22c55e; font-weight: 600;">Союз</span></li>
+                        <li><span style="color: #64748b; font-weight: 600;">Нейтралітет</span></li>
+                        <li><span style="color: #f97316; font-weight: 600;">Напруга</span></li>
+                        <li><span style="color: #ea580c; font-weight: 600;">Конфлікт</span></li>
+                        <li><span style="color: #ef4444; font-weight: 600;">Війна</span></li>
+                    </ul>
                 </div>
 
-                <h3>4.3 Дипломатія та Конфлікти</h3>
                 <div class="rule-block">
-                    <span class="rule-number">4.3.1</span>
-                    <p><strong>Рівні відносин:</strong> Союз, Нейтралітет, Напруга, Конфлікт, Війна. Зміни відбуваються тільки через РП-події з обов'язковим КД у 2 дні. Конфлікти (політичні, економічні, кримінальні) не означають автоматичну війну.</p>
+                    <span class="rule-number">5.1</span>
+                    <p>Зміна дипломатичного статусу відбувається виключно через РП-події (ноти протесту, підписання договорів, офіційні заяви лідерів) з обов'язковим КД у <span style="color: #eab308; font-weight: 600;">2 дні</span> між змінами статусів.</p>
+                </div>
+
+                <div class="rule-block">
+                    <span class="rule-number">5.2</span>
+                    <p>Конфлікт (політичний, економічний чи кримінальний) не означає автоматичний початок війни, а є передумовою для дипломатичного врегулювання або оголошення ультиматуму.</p>
+                </div>
+            </section>
+
+            <section id="rp-government" class="rules-section">
+                <h2>6. ЦЕНТРАЛЬНИЙ УРЯД (КОМІТЕТ ЦИВІЛІЗАЦІЙ)</h2>
+                <div class="rule-block" style="border-left: 3px solid var(--purple-accent); background: rgba(124, 58, 237, 0.02);">
+                    <p>Центральний Уряд є вищим наднаціональним органом, який регулює відносини між усіма визнаними державами світу.</p>
+                </div>
+
+                <div class="rule-block">
+                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-shield-alt" style="color: #38bdf8; margin-right: 0.5rem;"></i>Цілі Уряду:</p>
+                    <ul style="padding-left: 1.2rem; color: var(--text-muted);">
+                        <li>Запобігання хаотичним війнам.</li>
+                        <li>Нагляд за озброєнням держав.</li>
+                        <li>Надання офіційного статусу новим країнам.</li>
+                        <li>Регулювання торгових стандартів та єдиної валюти.</li>
+                    </ul>
+                </div>
+
+                <div class="rule-block">
+                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-balance-scale" style="color: #a855f7; margin-right: 0.5rem;"></i>Структура Центрального Уряду:</p>
+                    <ul style="padding-left: 1.2rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.25rem;">
+                        <li><strong style="color: var(--text-main);">Генеральна Рада</strong> (законодавчий орган).</li>
+                        <li><strong style="color: var(--text-main);">Генеральна Канцелярія</strong> (виконавчий орган, що займається реєстрацією держав та контролем лімітів).</li>
+                        <li><strong style="color: var(--text-main);">Верховний Суд</strong> (незалежний судовий орган для вирішення міждержавних суперечок).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="rp-parliament" class="rules-section">
+                <h2>7. ПОЛІТИЧНА СИСТЕМА ТА ПАРТІЙНИЙ УСТРІЙ</h2>
+                <div class="rule-block">
+                    <span class="rule-number">7.1</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem;"><i class="fas fa-gavel" style="color: var(--purple-accent); margin-right: 0.5rem;"></i>Генеральна Рада Комітету</p>
+                        <p style="margin-bottom: 0.5rem;">Рада є вищим міжнародним парламентом.</p>
+                        <p style="margin-bottom: 0.5rem;">Кількість місць (мандатів) у Раді обмежена — <span style="color: var(--purple-accent); font-weight: 600;">15 мандатів</span>.</p>
+                        <p style="margin-bottom: 0.25rem;">Рада складається з:</p>
+                        <ul style="padding-left: 1.2rem; color: var(--text-muted);">
+                            <li><strong style="color: var(--text-main);">Гетьмана</strong> (Голова Ради з правом вето).</li>
+                            <li><strong style="color: var(--text-main);">Генерального Писаря</strong> (секретар, що веде протоколи та реєструє законопроекти).</li>
+                            <li><strong style="color: var(--text-main);">Депутатів</strong> (представники офіційно зареєстрованих партій).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <span class="rule-number">7.2</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem;"><i class="fas fa-box-tissue" style="color: #22c55e; margin-right: 0.5rem;"></i>Вибори до Генеральної Ради</p>
+                        <p>Вибори проводяться регулярний раз на <span style="color: #22c55e; font-weight: 600;">30 днів</span>.</p>
+                        <p>Передвиборча кампанія триває 5 днів, саме голосування — 3 дні.</p>
+                        <p>Голосування є анонімним. Кожен громадянин світу має 1 голос.</p>
+                        <p>Місця в Раді розподіляються пропорційно до набраних партіями відсотків голосів.</p>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <span class="rule-number">7.3</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem;">Вимоги до Політичних Партій</p>
+                        <p style="margin-bottom: 0.25rem;">Для участі у виборах партія повинна мати:</p>
+                        <ul style="padding-left: 1.2rem; color: var(--text-muted);">
+                            <li>Мінімальний склад — 3 гравці.</li>
+                            <li>Унікальну передвиборчу програму та ідеологію.</li>
+                            <li>Назву, символіку (прапор/логотип).</li>
+                            <li>Офіційне схвалення від Генеральної Канцелярії перед початком виборів.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <span class="rule-number">7.4</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem;">Повноваження Гетьмана</p>
+                        <p>Гетьман обирається членами Генеральної Ради терміном на 1 місяць.</p>
+                        <p>Гетьман має право термінового скликання Ради або її розпуску за наявності вагомої РП-причини.</p>
+                        <p>Гетьман має право вето на закони, що радикально змінюють баланс у світі.</p>
+                    </div>
                 </div>
             </section>
 
             <section id="rp-war" class="rules-section">
-                <h2>5. Війна, Бої, Облоги та Ліміти техніки</h2>
-                <p class="rules-meta">Офіційний регламент Omnistium</p>
-                <p>Війна — фінальна стадія великого конфлікту. Повинна мати чітку RP-причину. Безпричинні атаки та нескінченні штурми суворо заборонені.</p>
+                <h2>8. ВІЙНА ТА КОНФЛІКТИ</h2>
+                <div class="rule-block" style="border-left: 3px solid #ef4444;">
+                    <p>Війна — це крайня міра вирішення міждержавних конфліктів. Будь-яка війна повинна мати чітку, зафіксовану в РП-постах причину (<span style="color: #ef4444; font-weight: 600;">казус беллі</span>).</p>
+                </div>
+
+                <div class="rule-block">
+                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-skull-crossbones" style="color: #ef4444; margin-right: 0.5rem;"></i>Причини для війни:</p>
+                    <ul style="padding-left: 1.2rem; color: var(--text-muted);">
+                        <li>Територіальні суперечки (офіційні претензії на землі).</li>
+                        <li>Порушення міжнародних договорів або ультиматумів.</li>
+                        <li>Економічна блокада або загроза безпеці держави.</li>
+                        <li>Захист союзника за наявності офіційного оборонного пакту.</li>
+                    </ul>
+                </div>
+
+                <div class="rule-block">
+                    <span class="rule-number">8.1</span>
+                    <p>Оголошення війни відбувається через офіційний РП-пост з виставленням ультиматуму. Час на виконання умов ультиматуму — <span style="color: #eab308; font-weight: 600;">не менше 24 годин</span>. Після завершення цього часу стан війни вважається активним.</p>
+                </div>
+
+                <div class="rule-block" style="border-left: 3px solid #ef4444;">
+                    <span class="rule-number" style="color: #ef4444;">8.2</span>
+                    <p>Заборонено оголошувати війну без попередніх дипломатичних кроків (напруги чи конфлікту в РП-історії).</p>
+                </div>
+            </section>
+
+            <section id="rp-battles" class="rules-section">
+                <h2>9. РЕГЛАМЕНТ БОЇВ</h2>
+                <div class="rule-block">
+                    <span class="rule-number">9.1</span>
+                    <p>Усі масштабні бої (польові битви, засади на колони) мають бути заздалегідь узгоджені між лідерами сторін та РП-адміністрацією щодо дати, часу та списку учасників.</p>
+                </div>
+
+                <div class="rule-block" style="border-left: 3px solid #ef4444;">
+                    <span class="rule-number" style="color: #ef4444;">9.2</span>
+                    <p>Під час офіційного бою кожен учасник має лише <span style="color: #ef4444; font-weight: 600;">одне життя</span>. Гравець, який загинув, не має права повертатися на місце бою до його повного завершення.</p>
+                </div>
+
+                <div class="rule-block">
+                    <span class="rule-number">9.3</span>
+                    <p>Сторона, що перемогла в бою, отримує право на збір луту з поля бою та захоплення техніки, яка була виведена з ладу.</p>
+                </div>
+            </section>
+
+            <section id="rp-sieges" class="rules-section">
+                <h2>10. РЕГЛАМЕНТ ОБЛОГ</h2>
+                <div class="rule-block">
+                    <p>Облога міста або фортеці — це тривала військова операція, яка проходить у <span style="color: var(--purple-accent); font-weight: 600;">5 обов'язкових фаз</span>:</p>
+                </div>
                 
-                <h3>5.1 Регламент Боїв та Облог</h3>
                 <div class="rule-block">
-                    <span class="rule-number">5.1.1</span>
-                    <p><strong>Узгодження:</strong> Дата, час, сторона нападу/захисту та списки союзників фіксуються лідерами та RP-адміністрацією до початку бою. Зміна умов дозволена лише за згоди обох сторін або рішенням адміністрації.</p>
-                </div>
-                <div class="rule-block">
-                    <span class="rule-number">5.1.2</span>
-                    <p><strong>Правила Бою:</strong> У великих битвах у кожного бійця 1 життя, респавн тільки на стартовій позиції. Переможці отримують повне право на збір ресурсів із залишків поля бою та захоплених таборів.</p>
-                </div>
-                <div class="rule-block">
-                    <span class="rule-number">5.1.3</span>
-                    <p><strong>Фази Облоги:</strong> Проходить у 5 етапів: 1. Початкова (розташування, заборона атак); 2. Підготовча (будівництво облогових машин, рейди оборони); 3. Штурмова (блокада, використання техніки); 4. Міські бої (просування в місті); 5. Завершення (капітуляція чи мир). Відродження під час облог не обмежене.</p>
+                    <span class="rule-number" style="color: #38bdf8;">Фаза 1</span>
+                    <p><strong>Початкова фаза (Оточення):</strong> Нападники займають позиції навколо міста, зводять перші укріплення та оголошують стан облоги в РП-чат. На цій фазі заборонено прямий штурм стін.</p>
                 </div>
 
-                <h3>5.2 Ліміти військової техніки</h3>
                 <div class="rule-block">
-                    <span class="rule-number">5.2.1</span>
-                    <p><strong>Загальні ліміти (На одну державу):</strong> Регулюються Генеральною Канцелярією для збереження балансу сил та технічної стабільності ігрового процесу.</p>
+                    <span class="rule-number" style="color: #38bdf8;">Фаза 2</span>
+                    <p><strong>Підготовча фаза (Артилерійська підготовка):</strong> Дозволяється використання облогової техніки, артилерії та авіації для руйнування зовнішніх укріплень. Проводяться локальні рейди оборони.</p>
+                </div>
+
+                <div class="rule-block">
+                    <span class="rule-number" style="color: #38bdf8;">Фаза 3</span>
+                    <p><strong>Штурмова фаза (Прорив):</strong> Нападники починають прямий штурм стін, форсування ровів та прорив через головні ворота або проломи. Використовується штурмова техніка.</p>
+                </div>
+
+                <div class="rule-block">
+                    <span class="rule-number" style="color: #38bdf8;">Фаза 4</span>
+                    <p><strong>Фаза міських боїв:</strong> Бойові дії переходять безпосередньо на вулиці міста. Захоплення стратегічних точок (склади, ратуша, командні пункти).</p>
+                </div>
+
+                <div class="rule-block">
+                    <span class="rule-number" style="color: #22c55e;">Фаза 5</span>
+                    <p><strong>Фінальна фаза (Завершення):</strong> Повна капітуляція захисників, або успішне відбиття штурму. Підписання мирного договору або акту про капітуляцію.</p>
+                </div>
+
+                <div class="rule-block">
+                    <span class="rule-number">10.1</span>
+                    <p>Під час облоги правила відродження (респавну) регулюються окремими технічними налаштуваннями сервера, але повернення в бій дозволено лише через визначені РП-точки (табори або тилові міста).</p>
                 </div>
             </section>
 
-            <section id="rp-rules-other" class="rules-section">
-                <h2>6. Табори, Повстання, Військові організації та Найманці</h2>
-                <p class="rules-meta">Офіційний регламент Omnistium</p>
-                <h3>6.1 Військові табори</h3>
+            <section id="rp-camps" class="rules-section">
+                <h2>11. ВІЙСЬКОВІ ТАБОРИ</h2>
                 <div class="rule-block">
-                    <span class="rule-number">6.1.1</span>
-                    <p><strong>Функції:</strong> Створюються під час облог як логістичний склад, РП-точка відступу армії та база підготовки. Не дають економічних переваг міста.</p>
+                    <span class="rule-number">11.1</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem;"><i class="fas fa-campground" style="color: #f97316; margin-right: 0.5rem;"></i>Функції табору:</p>
+                        <ul style="padding-left: 1.2rem; color: var(--text-muted);">
+                            <li>Підготовка ресурсів для облоги або бою</li>
+                            <li>Rp-точка відступу</li>
+                            <li>Якщо армія програла бій, вона може відступити у табір</li>
+                        </ul>
+                    </div>
                 </div>
+
                 <div class="rule-block">
-                    <span class="rule-number">6.1.2</span>
-                    <p><strong>Обмеження:</strong> Будується 30 хвилин. Кількість строго лімітована: до 8 гравців — 1 табір, 9+ — 2 табори, 17+ — 3 табори, 25+ — 4 табори. Заборонено миттєва поява в зоні ворога.</p>
-                </div>
-                <h3>6.2 Організації та Найманці</h3>
-                <div class="rule-block">
-                    <span class="rule-number">6.2.1</span>
-                    <p><strong>Військові організації:</strong> Склад не обмежений, потрібна чітка структура та РП-мета. Дозволені диверсії, локальні рейди та масштабні операції.</p>
-                </div>
-                <div class="rule-block">
-                    <span class="rule-number">6.2.2</span>
-                    <p><strong>Найманці:</strong> Одиночні або в організаціях. Мають право на виконання контрактів та участь у боях. Категорично заборонено змінювати сторону прямо під час активного бою без важкої РП-причини.</p>
+                    <span class="rule-number">11.2</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem;"><i class="fas fa-exclamation-triangle" style="color: #ef4444; margin-right: 0.5rem;"></i>Обмеження табору:</p>
+                        <ul style="padding-left: 1.2rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.25rem;">
+                            <li>Табір не є містом і не дає економічних переваг</li>
+                            <li>Не може використовуватись у мирних цілях</li>
+                            <li>Не може існувати без RP-конфлікту</li>
+                            <li>Може бути знищений або захоплений під час війни</li>
+                            <li><span style="color: var(--purple-accent); font-weight: 600;">Ліміти пропозиції:</span> До 8 гравців - 1 табір, 9+ гравців - 2 табори, 17+ гравців - 3 табори, 25+ гравців - 4 табори.</li>
+                            <li>Час побудови: <span style="color: #eab308; font-weight: 600;">30 хвилин</span></li>
+                            <li>Заборонено миттєве появлення табору в зоні ворога</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
-            <section id="rp-administration" class="rules-section">
-                <h2>7. Заборонені предмети та Повноваження RP-Адміністрації</h2>
-                <p class="rules-meta">Офіційний регламент Omnistium</p>
-                <h3>7.1 Заборонені предмети під час боїв</h3>
+            <section id="rp-organizations" class="rules-section">
+                <h2>12. ВІЙСЬКОВІ ОРГАНІЗАЦІЇ ТА НАЙМАНЦІ</h2>
                 <div class="rule-block">
-                    <span class="rule-number">7.1.1</span>
-                    <p>Під час боїв, облог та рейдів суворо заборонено використовувати тотеми безсмертя, зілля невидимості, а також будь-які механіки швидкого ваншоту.</p>
+                    <span class="rule-number">12.1</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem;">Військові організації:</p>
+                        <p style="margin-bottom: 0.5rem;">Мінімальний склад не обов’язковий</p>
+                        <p style="margin-bottom: 0.5rem;">Потрібна RP-мета та структура</p>
+                        <p style="margin-bottom: 0.25rem;">Дозволено:</p>
+                        <ul style="padding-left: 1.2rem; color: var(--text-muted);">
+                            <li>Війни</li>
+                            <li>Диверсії</li>
+                            <li>Військові операції</li>
+                        </ul>
+                    </div>
                 </div>
+
                 <div class="rule-block">
-                    <span class="rule-number">7.1.2</span>
-                    <p>Заборонено безповоротне та повне знищення ландшафту, території держави або світу.</p>
+                    <span class="rule-number">12.2</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem;">Найманці:</p>
+                        <p style="margin-bottom: 0.5rem;">Гравець може бути одиночним найманцем або частиною організації.</p>
+                        <p style="margin-bottom: 0.25rem;">Дозволено:</p>
+                        <ul style="padding-left: 1.2rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+                            <li>Виконання контрактів</li>
+                            <li>Участь у боях</li>
+                            <li>Незалежна діяльність</li>
+                        </ul>
+                        <p style="color: #ef4444; font-weight: 500;">Найманці не можуть змінювати сторону під час бою без RP-обґрунтування.</p>
+                    </div>
                 </div>
-                <h3>7.2 Повноваження RP-Адміністрації</h3>
-                <div class="rule-block">
-                    <span class="rule-number">7.2.1</span>
-                    <p><strong>Функції:</strong> Прямий контроль глобальних подій, затвердження офіційних війн, вирішення суперечок та формування загального сюжетного сценарію.</p>
+            </section>
+
+            <section id="rp-forbidden" class="rules-section">
+                <h2>13. ЗАБОРОНЕНІ ПРЕДМЕТИ ПІД ЧАС БОЇВ, ОБЛОГ ТА РЕЙДІВ</h2>
+                <div class="rule-block" style="border-left: 3px solid #ef4444; background: rgba(239, 68, 68, 0.01);">
+                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: #ef4444;"><i class="fas fa-ban" style="margin-right: 0.5rem;"></i>Заборонено:</p>
+                    <ul style="padding-left: 1.2rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+                        <li>Використання тотемів безсмертя.</li>
+                        <li>Використання зілля невидимості.</li>
+                        <li>Використання будь-яких багів модів для миттєвого вбивства (ваншоту) гравців чи техніки.</li>
+                        <li>Повне знищення ландшафту навколо міст без військової доцільності (випалена земля дозволена лише частково за погодженням з адміністрацією).</li>
+                    </ul>
                 </div>
+            </section>
+
+            <section id="rp-admin-staff" class="rules-section">
+                <h2>14. RP-АДМІНІСТРАЦІЯ</h2>
+                <div class="rule-block" style="border-left: 3px solid var(--purple-accent);">
+                    <p>Адміністрація проекту є вищим контрольним та апеляційним органом, що забезпечує дотримання атмосфери ігрового процесу.</p>
+                </div>
+                
                 <div class="rule-block">
-                    <span class="rule-number">7.2.2</span>
-                    <p><strong>Права:</strong> Адміністрація має повне право змінювати результати подій у разі виявлення порушень, коригувати баланс, призначати/знімати суддів та відхиляти нелогичні РП-пости.</p>
+                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-tools" style="color: var(--purple-accent); margin-right: 0.5rem;"></i>Обов'язки та функції:</p>
+                    <ul style="padding-left: 1.2rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.25rem;">
+                        <li>Контроль за дотриманням гравцями логіки та атмосфери індустріального світу.</li>
+                        <li>Організація, затвердження та проведення глобальних сюжетних івентів.</li>
+                        <li>Вирішення спірних моментів та розгляд скарг на порушення правил під час облог та битв.</li>
+                        <li>Логування та фіксація масштабних міждержавних угод чи оголошень стану війни.</li>
+                    </ul>
+                </div>
+
+                <div class="rule-block">
+                    <p>Будь-які дії ігрових майстрів (ГМ) спрямовані виключно на підтримання ігрового балансу. Рішення RP-адміністрації є остаточними, але можуть бути переглянуті за наявності вагомих доказів у Discord тікет-системі.</p>
                 </div>
             </section>
         </main>
