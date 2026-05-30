@@ -9,15 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <div class="dev-banner">
-        <div class="dev-banner-text">
-            УВАГА: Сайт перебуває в розробці — деякі функції можуть не працювати належним чином! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-            УВАГА: Сайт перебуває в розробці — деякі функції можуть не працювати належним чином! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-            УВАГА: Сайт перебуває в розробці — деякі функції могут не працювати належним чином! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            УВАГА: Сайт перебуває в розробці — деякі функції можуть не працювати належним чином!
-        </div>
-    </div>
-
     <header>
         <nav>
             <div class="logo">
@@ -30,19 +21,25 @@
             <button class="menu-toggle" id="mobile-menu-btn">☰</button>
             
             <ul class="nav-links" id="nav-menu">
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="modpack.html">Модпак</a></li>
-                <li><a href="rules.html">Правила</a></li>
-                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="index.html"><i class="fas fa-home" style="font-size: 0.9rem; margin-right: 0.3rem;"></i>Головна</a></li>
+                <li><a href="modpack.html"><i class="fas fa-cubes" style="font-size: 0.9rem; margin-right: 0.3rem;"></i>Модпак</a></li>
+                <li><a href="rules.html" class="active"><i class="fas fa-gavel" style="font-size: 0.9rem; margin-right: 0.3rem;"></i>Правила</a></li>
+                <li><a href="shop.html"><i class="fas fa-shop" style="font-size: 0.9rem; margin-right: 0.3rem;"></i>Магазин</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="rules-layout">
         <aside class="rules-sidebar">
+            <div class="sidebar-category">Minecraft правила</div>
+            <ul class="sidebar-links">
+                <li><a href="#" class="sidebar-id active" data-target="mc-behavior">1. Поведінка та чесна гра</a></li>
+                <li><a href="#" class="sidebar-id" data-target="mc-building">2. Території та будівництво</a></li>
+            </ul>
+
             <div class="sidebar-category">RP правила</div>
             <ul class="sidebar-links">
-                <li><a href="#" class="sidebar-id active" data-target="rp-principles">1. Загальні принципи</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-principles">1. Загальні принципи</a></li>
                 <li><a href="#" class="sidebar-id" data-target="rp-economy">2. Економіка</a></li>
                 <li><a href="#" class="sidebar-id" data-target="rp-industry">3. Індустрія</a></li>
                 <li><a href="#" class="sidebar-id" data-target="rp-machinery">4. Машинобудування</a></li>
@@ -60,7 +57,148 @@
         </aside>
 
         <main class="rules-content">
-            <section id="rp-principles" class="rules-section active">
+
+            <!-- ===================== MINECRAFT ПРАВИЛА ===================== -->
+
+            <section id="mc-behavior" class="rules-section active">
+                <h2>1. ПОВЕДІНКА ТА ЧЕСНА ГРА</h2>
+                <div class="rules-meta">Основні правила поведінки на сервері для всіх гравців.</div>
+
+                <div class="rule-block">
+                    <span class="rule-number">1.1</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Лише стандартні можливості гри</p>
+                        <p>Будь-які програми, модифікації або інші інструменти, що дають перевагу над іншими учасниками, вважаються порушенням.</p>
+                        <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9rem;"><i class="fas fa-circle-info" style="color: #38bdf8; margin-right: 0.4rem;"></i>Приклад: автоматичне наведення, пошук ресурсів крізь блоки або автоматизація дій персонажа.</p>
+                    </div>
+                </div>
+
+                <div class="rule-block" style="border-left: 3px solid #ef4444;">
+                    <span class="rule-number" style="color: #ef4444;">1.2</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Заборона використання багів</p>
+                        <p>Забороняється отримувати користь із помилок гри чи сервера. Якщо ви виявили проблему — повідомте про неї адміністрацію.</p>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <span class="rule-number">1.3</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Повага до майна інших гравців</p>
+                        <p>Будь-яке привласнення чужих ресурсів, навмисне пошкодження споруд або завдання шкоди без дозволу власника не допускається.</p>
+                        <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9rem;"><i class="fas fa-circle-info" style="color: #38bdf8; margin-right: 0.4rem;"></i>Приклад: забрати речі зі скрині іншого гравця або зруйнувати частину його будинку.</p>
+                    </div>
+                </div>
+
+                <div class="rule-block" style="border-left: 3px solid #ef4444;">
+                    <span class="rule-number" style="color: #ef4444;">1.4</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Заборона шахрайства</p>
+                        <p>Будь-які форми шахрайства, введення в оману або спроби отримати вигоду нечесним шляхом заборонені.</p>
+                        <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9rem;"><i class="fas fa-circle-info" style="color: #38bdf8; margin-right: 0.4rem;"></i>Приклад: видавати себе за адміністратора або вимагати передачу речей під неправдивим приводом.</p>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <span class="rule-number">1.5</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Повага до трансляцій та заходів</p>
+                        <p>Не створюйте навмисних перешкод іншим гравцям під час їхніх трансляцій, записів відео чи проведення заходів.</p>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <span class="rule-number">1.6</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Пастки та смертоносні конструкції</p>
+                        <p>Створення конструкцій, головною метою яких є гарантована загибель іншого гравця, не вітається. Під час офіційних воєн або конфліктів можуть діяти окремі винятки.</p>
+                    </div>
+                </div>
+
+                <div class="rule-block" style="border-left: 3px solid #ef4444;">
+                    <span class="rule-number" style="color: #ef4444;">1.7</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Співучасть у порушеннях</p>
+                        <p>Допомога порушникам, приховування доказів або сприяння обходу покарання розглядається як співучасть у порушенні.</p>
+                    </div>
+                </div>
+
+                <div class="rule-block" style="border-left: 3px solid #ef4444; background: rgba(239, 68, 68, 0.01);">
+                    <span class="rule-number" style="color: #ef4444;">1.8</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Систематичні порушення</p>
+                        <p>Якщо гравець регулярно ігнорує правила, адміністрація може застосувати більш суворі санкції аж до <span style="color: #ef4444; font-weight: 600;">безстрокового блокування</span> доступу до сервера.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="mc-building" class="rules-section">
+                <h2>2. ТЕРИТОРІЇ, БУДІВНИЦТВО ТА МЕХАНІЗМИ</h2>
+                <div class="rules-meta">Правила щодо будівництва, захоплення та використання територій.</div>
+
+                <div class="rule-block" style="border-left: 3px solid var(--purple-accent); background: rgba(124, 58, 237, 0.02);">
+                    <span class="rule-number">2.1</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Центральна зона</p>
+                        <p>Центральна зона світу призначена для загального користування. Будь-які масштабні зміни, забудова або розміщення механізмів у цій області повинні бути попередньо <span style="color: var(--purple-accent); font-weight: 600;">погоджені з адміністрацією</span>.</p>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <span class="rule-number">2.2</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Закріплення територій</p>
+                        <p>Територія вважається закріпленою за гравцем або містом після її офіційного оформлення через серверні інструменти.</p>
+                    </div>
+                </div>
+
+                <div class="rule-block" style="border-left: 3px solid #ef4444;">
+                    <span class="rule-number" style="color: #ef4444;">2.3</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Будівництво на чужій території</p>
+                        <p>Перед будівництвом на чужій території необхідно отримати дозвіл власника.</p>
+                        <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9rem;"><i class="fas fa-circle-info" style="color: #38bdf8; margin-right: 0.4rem;"></i>Приклад: не можна добудувати будинок до чужої бази без погодження.</p>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <span class="rule-number">2.4</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Порядок після робіт</p>
+                        <p>Після будівельних або видобувних робіт рекомендується залишати місцевість у належному стані.</p>
+                        <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9rem;"><i class="fas fa-circle-info" style="color: #38bdf8; margin-right: 0.4rem;"></i>Приклад: не залишати довгі стовпи до неба, величезні ями або випадкові платформи в повітрі.</p>
+                    </div>
+                </div>
+
+                <div class="rule-block" style="border-left: 3px solid #ef4444;">
+                    <span class="rule-number" style="color: #ef4444;">2.5</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Образлива символіка</p>
+                        <p>Забороняється створення споруд, символіки або написів, які можуть ображати інших гравців чи порушувати норми спільноти.</p>
+                    </div>
+                </div>
+
+                <div class="rule-block">
+                    <span class="rule-number">2.6</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Оптимізація механізмів</p>
+                        <p>Усі ферми, механізми та автоматичні системи повинні бути оптимізованими. Якщо певна конструкція негативно впливає на стабільність сервера, адміністрація має право її прибрати.</p>
+                    </div>
+                </div>
+
+                <div class="rule-block" style="border-left: 3px solid #ef4444;">
+                    <span class="rule-number" style="color: #ef4444;">2.7</span>
+                    <div>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem;">Захаращення світу</p>
+                        <p>Не допускається навмисне захаращення світу великою кількістю блоків, предметів або інших об'єктів.</p>
+                        <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9rem;"><i class="fas fa-circle-info" style="color: #38bdf8; margin-right: 0.4rem;"></i>Приклад: тисячі викинутих предметів, непотрібні ряди човнів або вагонеток без практичного призначення.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===================== RP ПРАВИЛА ===================== -->
+
+            <section id="rp-principles" class="rules-section">
                 <h2>1. ЗАГАЛЬНІ ПРИНЦИПИ</h2>
                 <div class="rule-block" style="border-left: 3px solid var(--purple-accent); background: rgba(124, 58, 237, 0.02);">
                     <p>Сервер базується на індустріальному РП світі з модами <span style="color: var(--purple-accent); font-weight: 600;">Create</span> та <span style="color: var(--purple-accent); font-weight: 600;">Create: Aeronautics</span>, з розвиток держав, економіки та військових конфліктів.</p>
@@ -81,7 +219,7 @@
                     <div>
                         <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.05em;">RP-логіка</p>
                         <p>Будь-яка дія має мати <span style="color: var(--purple-accent); font-weight: 600;">RP-причину</span></p>
-                        <p>Заборонені нелогічні або “ігрові” дії без обґрунтування</p>
+                        <p>Заборонені нелогічні або "ігрові" дії без обґрунтування</p>
                         <p>Світ розвивається через історію та наслідки дій гравців</p>
                     </div>
                 </div>
@@ -117,106 +255,59 @@
             <section id="rp-industry" class="rules-section">
                 <h2>3. ІНДУСТРІЯ</h2>
                 <div class="rule-block">
-                    <p>Індустрія - <span style="color: #38bdf8; font-weight: 600;">стратегічна</span>, але не бойова система.</p>
-                </div>
-
-                <div class="rule-block">
-                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-industry" style="color: #a855f7; margin-right: 0.5rem;"></i>Включає:</p>
+                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-industry" style="color: #f97316; margin-right: 0.5rem;"></i>Основи індустрії:</p>
                     <ul style="padding-left: 1.2rem; color: var(--text-muted);">
-                        <li>Ферми та механізми</li>
-                        <li>Транспорт (Земний чи повітряний)</li>
-                        <li>Військова техніка</li>
-                        <li>Виробничі системи</li>
+                        <li>Видобуток та переробка ресурсів</li>
+                        <li>Виробництво товарів та техніки</li>
+                        <li>Розвиток інфраструктури держави</li>
                     </ul>
                 </div>
-
                 <div class="rule-block">
-                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-chart-line" style="color: #22c55e; margin-right: 0.5rem;"></i>Роль:</p>
-                    <ul style="padding-left: 1.2rem; color: var(--text-muted);">
-                        <li>Розвиток економіки</li>
-                        <li>Логістика</li>
-                        <li>Забезпечення армій</li>
-                        <li>Стратегічна перевага</li>
-                    </ul>
+                    <p>Індустріальний розвиток є основою економічної та військової могутності держави. Кожна країна має розвивати власне виробництво для забезпечення потреб армії та населення.</p>
                 </div>
             </section>
 
             <section id="rp-machinery" class="rules-section">
                 <h2>4. МАШИНОБУДУВАННЯ</h2>
                 <div class="rule-block">
-                    <p>Машинобудування — технологічна складова держави, що відповідає за проектування та створення складних рухомих одиниць.</p>
-                </div>
-
-                <div class="rule-block">
-                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-cogs" style="color: #eab308; margin-right: 0.5rem;"></i>Включає:</p>
-                    <ul style="padding-left: 1.2rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem;">
-                        <li><strong style="color: var(--text-main);">Автотранспорт:</strong> Створення вантажівок, тягачів та бронеавтомобілів.</li>
-                        <li><strong style="color: var(--text-main);">Авіабудування:</strong> Проектування літаків, дирижаблів та розвідувальних дронів.</li>
-                        <li><strong style="color: var(--text-main);">Суднобудування:</strong> Побудова військових кораблів та транспортних суден.</li>
-                        <li><strong style="color: var(--text-main);">Спецтехніка:</strong> Створення кранів, бурових установок та залізничного транспорту.</li>
+                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-gears" style="color: var(--purple-accent); margin-right: 0.5rem;"></i>Технічна база:</p>
+                    <ul style="padding-left: 1.2rem; color: var(--text-muted);">
+                        <li>Виробництво на базі модів Create та Create: Aeronautics</li>
+                        <li>Будівництво дирижаблів та бронетехніки</li>
+                        <li>Розробка промислових механізмів</li>
                     </ul>
                 </div>
-
                 <div class="rule-block">
-                    <span class="rule-number">4.1</span>
-                    <div>
-                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.75rem; text-transform: uppercase; font-size: 0.9rem;">Процес створення техніки складається з трьох етапів:</p>
-                        <p style="margin-bottom: 0.5rem;"><strong style="color: var(--purple-accent);">І. Дослідження:</strong> Розробка концепції та технологій. Потребує написання РП-посту, де зазначається назва країни, точний час початку дослідження, мета розробки та очікувані характеристики. Обов'язкове КД (час очікування) — <span style="color: #eab308; font-weight: 600;">4 години</span> перед переходом до наступного етапу.</p>
-                        <p style="margin-bottom: 0.5rem;"><strong style="color: var(--purple-accent);">ІІ. Будівництво:</strong> Запуск виробничого процесу. Техніка має будуватися у спеціально відведених спорудах (<span style="color: #38bdf8;">Ангар</span> для повітряного транспорту, <span style="color: #38bdf8;">Гараж</span> для наземного, <span style="color: #38bdf8;">Верф</span> для водного). Процес супроводжується проміжними скріншотами та фіксується в РП-постах.</p>
-                        <p style="margin-bottom: 0%;"><strong style="color: var(--purple-accent);">ІІІ. Запуск:</strong> Випробування та введення в експлуатацію. Техніка виводиться на полігон (спеціально очищена площадка) для фінальної перевірки. Цей етап не має часового КД, але потребує підсумкового РП-посту про успішний запуск.</p>
-                    </div>
-                </div>
-
-                <div class="rule-block" style="border-left: 3px solid #ef4444;">
-                    <span class="rule-number" style="color: #ef4444;">4.2</span>
-                    <p>Для масового або серійного виробництва військової чи цивільної техніки держава повинна мати побудований <span style="color: var(--purple-accent); font-weight: 600;">машинобудівний завод</span>. Будівництво без заводу (в звичайних гаражах чи ангарах) дозволяє створювати лише одиничні екземпляри техніки.</p>
-                </div>
-
-                <div class="rule-block">
-                    <span class="rule-number">4.3</span>
-                    <p>Будівництво великогабаритних проектів (техніка, об'єм якої перевищує <span style="color: #ef4444; font-weight: 600;">5000 блоків</span>) дозволено виключно на базі машинобудівного заводу або відповідної верфі.</p>
+                    <p>Вся техніка має бути побудована відповідно до технічних обмежень, встановлених адміністрацією. Використання технічних засобів поза межами затверджених специфікацій заборонено.</p>
                 </div>
             </section>
 
             <section id="rp-politics" class="rules-section">
                 <h2>5. ПОЛІТИКА ТА ДИПЛОМАТІЯ</h2>
                 <div class="rule-block">
-                    <p>Політика є основою взаємодії між державами. Вона визначає стабільність регіонів та легітимність урядів.</p>
-                </div>
-
-                <div class="rule-block">
-                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-flag" style="color: #38bdf8; margin-right: 0.5rem;"></i>Рівні відносин:</p>
-                    <ul style="padding-left: 1.2rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.25rem;">
-                        <li><span style="color: #22c55e; font-weight: 600;">Союз</span></li>
-                        <li><span style="color: #64748b; font-weight: 600;">Нейтралітет</span></li>
-                        <li><span style="color: #f97316; font-weight: 600;">Напруга</span></li>
-                        <li><span style="color: #ea580c; font-weight: 600;">Конфлікт</span></li>
-                        <li><span style="color: #ef4444; font-weight: 600;">Війна</span></li>
+                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-handshake" style="color: #38bdf8; margin-right: 0.5rem;"></i>Дипломатичні інструменти:</p>
+                    <ul style="padding-left: 1.2rem; color: var(--text-muted);">
+                        <li>Мирні договори та альянси</li>
+                        <li>Торговельні угоди</li>
+                        <li>Оборонні пакти</li>
+                        <li>Ультиматуми та декларації</li>
                     </ul>
                 </div>
-
                 <div class="rule-block">
-                    <span class="rule-number">5.1</span>
-                    <p>Зміна дипломатичного статусу відбувається виключно через РП-події (ноти протесту, підписання договорів, офіційні заяви лідерів) з обов'язковим КД у <span style="color: #eab308; font-weight: 600;">2 дні</span> між змінами статусів.</p>
-                </div>
-
-                <div class="rule-block">
-                    <span class="rule-number">5.2</span>
-                    <p>Конфлікт (політичний, економічний чи кримінальний) не означає автоматичний початок війни, а є передумовою для дипломатичного врегулювання або оголошення ультиматуму.</p>
+                    <p>Усі міждержавні угоди мають бути зафіксовані офіційними РП-постами. Усні домовленості без документального підтвердження вважаються необов'язковими.</p>
                 </div>
             </section>
 
             <section id="rp-government" class="rules-section">
-                <h2>6. ЦЕНТРАЛЬНИЙ УРЯД (КОМІТЕТ ЦИВІЛІЗАЦІЙ)</h2>
-                <div class="rule-block" style="border-left: 3px solid var(--purple-accent); background: rgba(124, 58, 237, 0.02);">
-                    <p>Центральний Уряд є вищим наднаціональним органом, який регулює відносини між усіма визнаними державами світу.</p>
+                <h2>6. ЦЕНТРАЛЬНИЙ УРЯД</h2>
+                <div class="rule-block">
+                    <p>Центральний Уряд — міжнародний регулятор, що контролює дотримання правил між державами та координує глобальні події.</p>
                 </div>
 
                 <div class="rule-block">
-                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-shield-alt" style="color: #38bdf8; margin-right: 0.5rem;"></i>Цілі Уряду:</p>
-                    <ul style="padding-left: 1.2rem; color: var(--text-muted);">
-                        <li>Запобігання хаотичним війнам.</li>
-                        <li>Нагляд за озброєнням держав.</li>
+                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-landmark" style="color: var(--purple-accent); margin-right: 0.5rem;"></i>Повноваження Центрального Уряду:</p>
+                    <ul style="padding-left: 1.2rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.25rem;">
+                        <li>Встановлення та зміна міжнародних законів.</li>
                         <li>Надання офіційного статусу новим країнам.</li>
                         <li>Регулювання торгових стандартів та єдиної валюти.</li>
                     </ul>
@@ -337,23 +428,23 @@
                 </div>
                 
                 <div class="rule-block">
-                    <span class="rule-number" style="color: #38bdf8;">Фаза 1</span>
-                    <p><strong>Початкова фаза (Оточення):</strong> Нападники займають позиції навколо міста, зводять перші укріплення та оголошують стан облоги в РП-чат. На цій фазі заборонено прямий штурм стін.</p>
+                    <span class="rule-number" style="color: #ef4444;">Фаза 1</span>
+                    <p><strong>Блокада (Ізоляція):</strong> Атакуюча сторона оточує місто, перекриваючи основні шляхи постачання. Захисники не можуть отримувати підкріплення або ресурси ззовні.</p>
                 </div>
 
                 <div class="rule-block">
-                    <span class="rule-number" style="color: #38bdf8;">Фаза 2</span>
-                    <p><strong>Підготовча фаза (Артилерійська підготовка):</strong> Дозволяється використання облогової техніки, артилерії та авіації для руйнування зовнішніх укріплень. Проводяться локальні рейди оборони.</p>
+                    <span class="rule-number" style="color: #f97316;">Фаза 2</span>
+                    <p><strong>Артилерійська підготовка (Бомбардування):</strong> Атакуючі можуть використовувати дальнобійну зброю або техніку для знищення укріплень. Захисники можуть відповідати вогнем зі стін.</p>
                 </div>
 
                 <div class="rule-block">
-                    <span class="rule-number" style="color: #38bdf8;">Фаза 3</span>
-                    <p><strong>Штурмова фаза (Прорив):</strong> Нападники починають прямий штурм стін, форсування ровів та прорив через головні ворота або проломи. Використовується штурмова техніка.</p>
+                    <span class="rule-number" style="color: #eab308;">Фаза 3</span>
+                    <p><strong>Штурм (Прорив):</strong> Атакуючі починають активний штурм укріплень. Захисники можуть використовувати всі доступні засоби оборони.</p>
                 </div>
 
                 <div class="rule-block">
                     <span class="rule-number" style="color: #38bdf8;">Фаза 4</span>
-                    <p><strong>Фаза міських боїв:</strong> Бойові дії переходять безпосередньо на вулиці міста. Захоплення стратегічних точок (склади, ратуша, командні пункти).</p>
+                    <p><strong>Бій у місті (Зачистка):</strong> Бойові дії переносяться всередину міста. Захисники можуть відступати до укріплених позицій всередині.</p>
                 </div>
 
                 <div class="rule-block">
@@ -368,7 +459,7 @@
             </section>
 
             <section id="rp-camps" class="rules-section">
-                <h2>11. ВІЙСЬКОВІ ТАБОРИ</h2>
+                <h2>11. ВІЙСЬКОВА ТАБОРИ</h2>
                 <div class="rule-block">
                     <span class="rule-number">11.1</span>
                     <div>
@@ -404,7 +495,7 @@
                     <span class="rule-number">12.1</span>
                     <div>
                         <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem;">Військові організації:</p>
-                        <p style="margin-bottom: 0.5rem;">Мінімальний склад не обов’язковий</p>
+                        <p style="margin-bottom: 0.5rem;">Мінімальний склад не обов'язковий</p>
                         <p style="margin-bottom: 0.5rem;">Потрібна RP-мета та структура</p>
                         <p style="margin-bottom: 0.25rem;">Дозволено:</p>
                         <ul style="padding-left: 1.2rem; color: var(--text-muted);">
@@ -453,7 +544,7 @@
                 <div class="rule-block">
                     <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-tools" style="color: var(--purple-accent); margin-right: 0.5rem;"></i>Обов'язки та функції:</p>
                     <ul style="padding-left: 1.2rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.25rem;">
-                        <li>Контроль за дотриманням гравцями логіки та атмосфери індустріального світу.</li>
+                        <li>Contроль за дотриманням гравцями логіки та атмосфери індустріального світу.</li>
                         <li>Організація, затвердження та проведення глобальних сюжетних івентів.</li>
                         <li>Вирішення спірних моментів та розгляд скарг на порушення правил під час облог та битв.</li>
                         <li>Логування та фіксація масштабних міждержавних угод чи оголошень стану війни.</li>
@@ -464,6 +555,7 @@
                     <p>Будь-які дії ігрових майстрів (ГМ) спрямовані виключно на підтримання ігрового балансу. Рішення RP-адміністрації є остаточними, але можуть бути переглянуті за наявності вагомих доказів у Discord тікет-системі.</p>
                 </div>
             </section>
+
         </main>
     </div>
 
