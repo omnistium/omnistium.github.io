@@ -9,15 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <div class="dev-banner">
-        <div class="dev-banner-text">
-            УВАГА: Сайт перебуває в розробці — деякі функції можуть не працювати належним чином! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-            УВАГА: Сайт перебуває в розробці — деякі функції можуть не працювати належним чином! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-            УВАГА: Сайт перебуває в розробці — деякі функції можуть не працювати належним чином! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            УВАГА: Сайт перебуває в розробці — деякі функції можуть не працювати належним чином!
-        </div>
-    </div>
-
     <header>
         <nav>
             <div class="logo">
@@ -30,67 +21,85 @@
             <button class="menu-toggle" id="mobile-menu-btn">☰</button>
             
             <ul class="nav-links" id="nav-menu">
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="modpack.html">Модпак</a></li>
-                <li><a href="rules.html">Правила</a></li>
-                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="index.html" class="active"><i class="fas fa-home" style="font-size: 0.9rem; margin-right: 0.3rem;"></i>Головна</a></li>
+                <li><a href="modpack.html"><i class="fas fa-cubes" style="font-size: 0.9rem; margin-right: 0.3rem;"></i>Модпак</a></li>
+                <li><a href="rules.html"><i class="fas fa-gavel" style="font-size: 0.9rem; margin-right: 0.3rem;"></i>Правила</a></li>
+                <li><a href="shop.html"><i class="fas fa-shop" style="font-size: 0.9rem; margin-right: 0.3rem;"></i>Магазин</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="container">
-        <section style="text-align: center; padding: 4rem 0;">
-            <h1 style="font-size: 3rem; margin-bottom: 1rem;">OMNISTIUM</h1>
-            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 2rem;">Геополітичний сервер на версії 1.21.1 NeoForge. Створюй корпорації, будуй дирижаблі та веди індустріальні війни.</p>
+        <section style="text-align: center; padding: 5rem 2rem; background: radial-gradient(circle at center, rgba(124, 58, 237, 0.06) 0%, transparent 70%); border-radius: 20px; margin-bottom: 2rem;">
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem; font-weight: 800; background: linear-gradient(135deg, var(--text-main) 40%, #a78bfa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -0.01em;">OMNISTIUM</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 2rem; font-size: 1.05rem; line-height: 1.6;">Геополітичний сервер на версії 1.21.1 NeoForge. Створюй корпорації, будуй дирижаблі та веди індустріальні війни.</p>
             
             <div class="ip-box" onclick="copyIP()">
-                <span id="server-ip">mc.omnistium.com</span>
+                <span id="server-ip"><i class="fas fa-terminal" style="color: var(--purple-accent); margin-right: 0.5rem; font-size: 0.85rem;"></i>mc.omnistium.com</span>
             </div>
             
             <div style="margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: center;">
-                <a href="https://discord.gg/4vzDgWzAT" class="btn btn-primary" target="_blank">Подати заявку (Discord)</a>
-                <a href="modpack.html" class="btn">Отримати модпак</a>
+                <a href="https://discord.gg/4vzDgWzAT" class="btn btn-primary" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fab fa-discord"></i>Подати заявку (Discord)</a>
+                <a href="modpack.html" class="btn" style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--bg-card);"><i class="fas fa-book"></i>Отримати модпак</a>
             </div>
         </section>
 
         <section style="margin-top: 6rem;">
-            <h2 style="text-align: center; font-size: 2rem; margin-bottom: 0.5rem;">Команда сервера</h2>
+            <h2 style="text-align: center; font-size: 2rem; margin-bottom: 0.5rem; font-weight: 700;">Команда сервера</h2>
             <p style="text-align: center; color: var(--text-muted); margin-bottom: 3rem;">Ті, хто створюють, розвивають та підтримують світ Omnistium.</p>
             
             <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-                <div class="card" style="padding: 2.2rem 1.8rem; display: flex; flex-direction: column; gap: 0.5rem;">
-                    <h3 style="font-size: 1.35rem; color: var(--text-main); margin: 0;">Yurk0</h3>
-                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--purple-accent); font-weight: 700; margin-bottom: 0.5rem;">Головний адміністратор</div>
+                <div class="card" style="padding: 2.2rem 1.8rem; display: flex; flex-direction: column; gap: 0.5rem; border-top: 3px solid #ef4444; border-radius: 12px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="font-size: 1.35rem; color: var(--text-main); margin: 0; font-weight: 700;">Yurk0</h3>
+                        <i class="fas fa-crown" style="color: #ef4444; opacity: 0.8;"></i>
+                    </div>
+                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: #f87171; font-weight: 700; margin-bottom: 0.5rem;">Головний адміністратор</div>
                     <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0; line-height: 1.4;">Відповідає за розробку сайту та комунікацію з гравцями.</p>
                 </div>
 
-                <div class="card" style="padding: 2.2rem 1.8rem; display: flex; flex-direction: column; gap: 0.5rem;">
-                    <h3 style="font-size: 1.35rem; color: var(--text-main); margin: 0;">Bledny</h3>
-                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--purple-accent); font-weight: 700; margin-bottom: 0.5rem;">Головний адміністратор</div>
+                <div class="card" style="padding: 2.2rem 1.8rem; display: flex; flex-direction: column; gap: 0.5rem; border-top: 3px solid #ef4444; border-radius: 12px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="font-size: 1.35rem; color: var(--text-main); margin: 0; font-weight: 700;">Bledny</h3>
+                        <i class="fas fa-server" style="color: #ef4444; opacity: 0.8;"></i>
+                    </div>
+                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: #f87171; font-weight: 700; margin-bottom: 0.5rem;">Головний адміністратор</div>
                     <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0; line-height: 1.4;">Відповідає за хостинг сервера та збірку.</p>
                 </div>
 
-                <div class="card" style="padding: 2.2rem 1.8rem; display: flex; flex-direction: column; gap: 0.5rem;">
-                    <h3 style="font-size: 1.35rem; color: var(--text-main); margin: 0;">vskiy</h3>
-                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--purple-accent); font-weight: 700; margin-bottom: 0.5rem;">Discord адміністратор</div>
+                <div class="card" style="padding: 2.2rem 1.8rem; display: flex; flex-direction: column; gap: 0.5rem; border-top: 3px solid #3b82f6; border-radius: 12px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="font-size: 1.35rem; color: var(--text-main); margin: 0; font-weight: 700;">vskiy</h3>
+                        <i class="fab fa-discord" style="color: #3b82f6; opacity: 0.8;"></i>
+                    </div>
+                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: #60a5fa; font-weight: 700; margin-bottom: 0.5rem;">Discord адміністратор</div>
                     <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0; line-height: 1.4;">Відповідає за Discord-сервер та прийняття анкет.</p>
                 </div>
 
-                <div class="card" style="padding: 2.2rem 1.8rem; display: flex; flex-direction: column; gap: 0.5rem;">
-                    <h3 style="font-size: 1.35rem; color: var(--text-main); margin: 0;">ElShardoo</h3>
-                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--purple-accent); font-weight: 700; margin-bottom: 0.5rem;">Тех Адмін</div>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0; line-height: 1.4;">Відповідає за дизайн проекту та прийняття анкет.</p>
+                <div class="card" style="padding: 2.2rem 1.8rem; display: flex; flex-direction: column; gap: 0.5rem; border-top: 3px solid #a855f7; border-radius: 12px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="font-size: 1.35rem; color: var(--text-main); margin: 0; font-weight: 700;">ElShardoo</h3>
+                        <i class="fas fa-palette" style="color: #a855f7; opacity: 0.8;"></i>
+                    </div>
+                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: #c084fc; font-weight: 700; margin-bottom: 0.5rem;">Тех Адмін</div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0; line-height: 1.4;">Відповідає за дизайн проекту.</p>
                 </div>
 
-                <div class="card" style="padding: 2.2rem 1.8rem; display: flex; flex-direction: column; gap: 0.5rem;">
-                    <h3 style="font-size: 1.35rem; color: var(--text-main); margin: 0;">Ziahar</h3>
-                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--purple-accent); font-weight: 700; margin-bottom: 0.5rem;">Тех Адмін</div>
+                <div class="card" style="padding: 2.2rem 1.8rem; display: flex; flex-direction: column; gap: 0.5rem; border-top: 3px solid #3b82f6; border-radius: 12px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="font-size: 1.35rem; color: var(--text-main); margin: 0; font-weight: 700;">Ziahar</h3>
+                        <i class="fas fa-gears" style="color: #3b82f6; opacity: 0.8;"></i>
+                    </div>
+                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: #60a5fa; font-weight: 700; margin-bottom: 0.5rem;">Тех Адмін</div>
                     <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0; line-height: 1.4;">Відповідає за прийняття пропозицій та налаштування серверу.</p>
                 </div>
 
-                <div class="card" style="padding: 2.2rem 1.8rem; display: flex; flex-direction: column; gap: 0.5rem;">
-                    <h3 style="font-size: 1.35rem; color: var(--text-main); margin: 0;">rodyaa</h3>
-                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--purple-accent); font-weight: 700; margin-bottom: 0.5rem;">РП Адміністратор</div>
+                <div class="card" style="padding: 2.2rem 1.8rem; display: flex; flex-direction: column; gap: 0.5rem; border-top: 3px solid #10b981; border-radius: 12px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="font-size: 1.35rem; color: var(--text-main); margin: 0; font-weight: 700;">rodyaa</h3>
+                        <i class="fas fa-scroll" style="color: #10b981; opacity: 0.8;"></i>
+                    </div>
+                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: #34d399; font-weight: 700; margin-bottom: 0.5rem;">РП Администратор</div>
                     <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0; line-height: 1.4;">Відповідає за РП.</p>
                 </div>
             </div>
