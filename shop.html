@@ -7,17 +7,70 @@
     <link rel="icon" type="image/png" href="logo_s.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* ІНДИВІДУАЛЬНЕ СВІЧЕННЯ КАРТОК ПРИ НАВЕДЕННІ */
+        .card-free:hover {
+            border-color: #10b981 !important;
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.15) !important;
+        }
+        .card-vip:hover {
+            border-color: var(--purple-accent) !important;
+            box-shadow: 0 10px 30px var(--purple-glow) !important;
+        }
+        .card-unban:hover {
+            border-color: #ef4444 !important;
+            box-shadow: 0 10px 30px rgba(239, 68, 68, 0.15) !important;
+        }
+
+        /* ЗЕЛЕНА КНОПКА (ПРОХІДКА) */
+        .btn-free {
+            background-color: #10b981 !important;
+            border-color: #10b981 !important;
+            color: #ffffff !important;
+            box-shadow: 0 4px 14px rgba(16, 185, 129, 0.2) !important;
+            transition: all 0.25s ease !important;
+        }
+        .btn-free::before { display: none !important; }
+        .btn-free:hover {
+            background-color: #0c9469 !important;
+            border-color: #0c9469 !important;
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4) !important;
+            color: #ffffff !important;
+        }
+
+        /* ФІОЛЕТОВА КНОПКА (VIP) */
+        .btn-vip {
+            background-color: var(--purple-accent) !important;
+            border-color: var(--purple-accent) !important;
+            color: #ffffff !important;
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.2) !important;
+            transition: all 0.25s ease !important;
+        }
+        .btn-vip::before { display: none !important; }
+        .btn-vip:hover {
+            background-color: #6d28d9 !important;
+            border-color: #6d28d9 !important;
+            box-shadow: 0 6px 20px rgba(124, 58, 237, 0.4) !important;
+            color: #ffffff !important;
+        }
+
+        /* ЧЕРВОНА КНОПКА (РОЗБАН) */
+        .btn-unban {
+            border-color: #ef4444 !important;
+            color: #f87171 !important;
+            background-color: transparent !important;
+            transition: all 0.25s ease !important;
+        }
+        .btn-unban::before { display: none !important; }
+        .btn-unban:hover {
+            background-color: #ef4444 !important;
+            border-color: #ef4444 !important;
+            color: #ffffff !important;
+            box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4) !important;
+        }
+    </style>
 </head>
 <body>
-    <div class="dev-banner">
-        <div class="dev-banner-text">
-            УВАГА: Сайт перебуває в розробці — деякі функції можуть не працювати належним чином! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-            УВАГА: Сайт перебуває в розробці — деякі функції можуть не працювати належним чином! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-            УВАГА: Сайт перебуває в розробці — деякі функції можуть не працювати належним чином! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            УВАГА: Сайт перебуває в розробці — деякі функції можуть не працювати належним чином!
-        </div>
-    </div>
-
     <header>
         <nav>
             <div class="logo">
@@ -30,61 +83,64 @@
             <button class="menu-toggle" id="mobile-menu-btn">☰</button>
             
             <ul class="nav-links" id="nav-menu">
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="modpack.html">Модпак</a></li>
-                <li><a href="rules.html">Правила</a></li>
-                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="index.html"><i class="fas fa-home" style="font-size: 0.9rem; margin-right: 0.3rem;"></i>Головна</a></li>
+                <li><a href="modpack.html"><i class="fas fa-cubes" style="font-size: 0.9rem; margin-right: 0.3rem;"></i>Модпак</a></li>
+                <li><a href="rules.html"><i class="fas fa-gavel" style="font-size: 0.9rem; margin-right: 0.3rem;"></i>Правила</a></li>
+                <li><a href="shop.html" class="active"><i class="fas fa-shop" style="font-size: 0.9rem; margin-right: 0.3rem;"></i>Магазин</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="container">
         <section style="text-align: center; padding: 4rem 0;">
-            <h1 style="font-size: 3rem; margin-bottom: 1rem;">МАГАЗИН ПРОЄКТУ</h1>
-            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 2rem;">Офіційні послуги та підтримка геополітичного сервера Omnistium.</p>
+            <h1 style="font-size: 2.5rem; margin-bottom: 1rem; font-weight: 800;">Магазин товарів та послуг</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto; line-height: 1.6;">Підтримайте розвиток та хостинг нашого проєкту. Усі отримані кошти спрямовуються виключно на покращення стабільності та оновлення серверного обладнання.</p>
+            
+            <div style="color: #ef4444; font-weight: 700; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(239, 68, 68, 0.08); padding: 0.6rem 1.5rem; border-radius: 8px; border: 1px solid rgba(239, 68, 68, 0.15); margin-top: 1rem;">
+                <i class="fas fa-circle-exclamation"></i> Магазин наразі не працює
+            </div>
         </section>
 
         <section class="grid">
-            <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; gap: 1.5rem;">
+            <div class="card card-free" style="display: flex; flex-direction: column; justify-content: space-between; gap: 1.5rem; border-top: 3px solid #10b981;">
                 <div>
                     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.5rem; color: var(--text-main);">Прохідка на сервер</h3>
-                        <i class="fas fa-ticket" style="font-size: 1.5rem; color: var(--purple-accent); opacity: 0.8;"></i>
+                        <h3 style="font-size: 1.5rem; color: var(--text-main); font-weight: 700;">Прохідка на сервер</h3>
+                        <i class="fas fa-ticket-alt" style="font-size: 1.5rem; color: #10b981; opacity: 0.9;"></i>
                     </div>
-                    <div style="font-size: 1.4rem; font-weight: 800; color: #22c55e; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">Безкоштовно</div>
-                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Наразі доступ на сервер є абсолютно вільним для всіх адекватних гравців. Подавайте анкету в нашому Discord та приєднуйтесь до індустріальних протистоянь.</p>
+                    <div style="font-size: 1.8rem; font-weight: 800; color: #10b981; margin-bottom: 1rem;"><i class="fas fa-check-circle" style="font-size: 1.4rem; margin-right: 0.3rem;"></i>Безкоштовно</div>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Вхід на сервер здійснюється за системою заявок (анкет). Вам не потрібно платити за доступ — достатньо якісно заповнити анкету в нашому Discord-сервері.</p>
                 </div>
-                <a href="https://discord.gg/4vzDgWzAT" target="_blank" class="btn btn-primary" style="text-align: center; animation: none;">Подати заявку в Discord</a>
+                <a href="https://discord.gg/4vzDgWzAT" target="_blank" class="btn btn-free" style="text-align: center;"><i class="fab fa-discord" style="margin-right: 0.4rem;"></i>Подати заявку</a>
             </div>
 
-            <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; gap: 1.5rem;">
+            <div class="card card-vip" style="display: flex; flex-direction: column; justify-content: space-between; gap: 1.5rem; border-top: 3px solid var(--purple-accent);">
                 <div>
                     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.5rem; color: var(--text-main);">Підписка VIP</h3>
-                        <i class="fas fa-crown" style="font-size: 1.5rem; color: var(--purple-accent); opacity: 0.8;"></i>
+                        <h3 style="font-size: 1.5rem; color: var(--text-main); font-weight: 700;">VIP-підписка</h3>
+                        <i class="fas fa-gem" style="font-size: 1.5rem; color: var(--purple-accent); opacity: 0.9;"></i>
                     </div>
-                    <div style="margin-bottom: 1rem;">
-                        <span style="font-size: 1.6rem; font-weight: 800; color: var(--text-main);">99 ₴</span> 
-                        <span style="font-size: 0.9rem; color: var(--text-muted);">/ міс.</span>
-                        <span style="color: var(--border-color); margin: 0 0.5rem;">|</span>
-                        <span style="font-size: 1.6rem; font-weight: 800; color: #22c55e;">199 ₴</span> 
-                        <span style="font-size: 0.9rem; color: var(--text-muted);">/ 3 міс.</span>
+                    
+                    <div style="margin-bottom: 1.2rem; display: flex; flex-direction: column; gap: 0.4rem; background: rgba(124, 58, 237, 0.03); padding: 0.75rem; border-radius: 8px; border: 1px solid rgba(124, 58, 237, 0.1);">
+                        <div style="font-size: 1.5rem; font-weight: 800; color: var(--text-main); display: flex; align-items: center; gap: 0.5rem;"><i class="fas fa-calendar-days" style="color: var(--purple-accent); font-size: 1.1rem;"></i>99 ₴ <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: 400;">/ 1 місяць</span></div>
+                        <div style="font-size: 1.5rem; font-weight: 800; color: #eab308; display: flex; align-items: center; gap: 0.5rem;"><i class="fas fa-crown" style="color: #eab308; font-size: 1.1rem;"></i>199 ₴ <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: 400;">/ 3 місяці</span></div>
                     </div>
-                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Особливий статус, який відкриває унікальні привілеї та додаткові можливості як на нашому ігровому Minecraft-сервері, так і всередині Discord-спільноти проекту Omnistium.</p>
+
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;"><i class="fas fa-star" style="color: var(--purple-accent); margin-right: 0.4rem;"></i>Надає привілеї на нашому Discord та Minecraft сервері.</p>
                 </div>
-                <a href="https://donatello.to/your-profile" target="_blank" class="btn" style="text-align: center;">Придбати VIP</a>
+                <a href="https://donatello.to/your-profile" target="_blank" class="btn btn-vip" style="text-align: center;"><i class="fas fa-heart" style="margin-right: 0.4rem;"></i>Підтримати проєкт</a>
             </div>
 
-            <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; gap: 1.5rem;">
+            <div class="card card-unban" style="display: flex; flex-direction: column; justify-content: space-between; gap: 1.5rem; border-top: 3px solid #ef4444;">
                 <div>
                     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-                        <h3 style="font-size: 1.5rem; color: var(--text-main);">Платне розблокування</h3>
-                        <i class="fas fa-lock-open" style="font-size: 1.5rem; color: var(--purple-accent); opacity: 0.8;"></i>
+                        <h3 style="font-size: 1.5rem; color: var(--text-main); font-weight: 700;">Платне розблокування</h3>
+                        <i class="fas fa-lock-open" style="font-size: 1.5rem; color: #ef4444; opacity: 0.9;"></i>
                     </div>
-                    <div style="font-size: 1.8rem; font-weight: 800; color: var(--purple-accent); margin-bottom: 1rem;">500 ₴</div>
+                    <div style="font-size: 1.8rem; font-weight: 800; color: #ef4444; margin-bottom: 1rem;"><i class="fas fa-circle-exclamation" style="font-size: 1.3rem; margin-right: 0.3rem;"></i>500 ₴</div>
                     <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Остання можливість повернутися на сервер після грубого порушення правил. Платне розблокування повністю анулює бан у грі та в Discord. Якщо після цього ви знову отримаєте бан за деструктивну поведінку — кошти повернуті не будуть, а доступ закриється назавжди.</p>
                 </div>
-                <a href="https://donatello.to/your-profile" target="_blank" class="btn" style="text-align: center;">Оплатити розбан</a>
+                <a href="https://donatello.to/your-profile" target="_blank" class="btn btn-unban" style="text-align: center;"><i class="fas fa-key" style="margin-right: 0.4rem;"></i>Оплатити розбан</a>
             </div>
         </section>
     </main>
@@ -99,7 +155,6 @@
             <a href="privacy-policy.html">Privacy Policy</a>
         </div>
     </footer>
-
     <script src="main.js"></script>
 </body>
 </html>
