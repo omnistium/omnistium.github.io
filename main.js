@@ -153,33 +153,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // 8. ДИНАМІЧНИЙ РІДКИЙ ПОВЗУНОК НАВІГАЦІЇ
     const navLinksContainer = document.querySelector('.nav-links');
     if (navLinksContainer && window.innerWidth > 768) {
-        // Створюємо елемент індикатора
         const indicator = document.createElement('div');
         indicator.className = 'nav-indicator';
         navLinksContainer.appendChild(indicator);
 
         const activeLink = navLinksContainer.querySelector('a.active');
 
-        // Функція оновлення позиції повзунка під посиланням
         function moveIndicator(target) {
             if (!target) return;
             indicator.style.left = target.offsetLeft + 'px';
             indicator.style.width = target.offsetWidth + 'px';
         }
 
-        // Початкова позиція на активній сторінці
         if (activeLink) {
             moveIndicator(activeLink);
         }
 
-        // Ефект ковзання при наведенні миші на інші пункти
         navLinks.forEach(link => {
             link.addEventListener('mouseenter', (e) => {
                 moveIndicator(e.target);
             });
         });
 
-        // Повернення повзунка на активну сторінку, коли мишка йде з хедера
         navLinksContainer.addEventListener('mouseleave', () => {
             const currentActive = navLinksContainer.querySelector('a.active');
             if (currentActive) {
@@ -187,9 +182,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // 9. ПЕРЕВІРКА СТАТУСУ MINECRAFT СЕРВЕРА
+    checkServerStatus();
+    setInterval(checkServerStatus, 30000);
 });
 
-// 7. ГОЛОВНА ФУНКЦІЯ ТОСТІВ
+// 7. ФУНКЦІЯ ТОСТІВ
 function showToast(message) {
     const existingToast = document.getElementById('copy-toast');
     if (existingToast) existingToast.remove();
@@ -225,8 +224,36 @@ function showToast(message) {
 function copyIP() {
     const ipText = document.getElementById('server-ip').innerText;
     navigator.clipboard.writeText(ipText).then(() => {
-        showToast('IP адресу успешно скопійовано!');
+        showToast('IP адресу успішно скопійовано!');
     }).catch(err => {
         console.error('Не вдалося скопіювати: ', err);
     });
+}
+
+// 10. ПЕРЕВІРКА СТАТУСУ MINECRAFT СЕРВЕРА
+function checkServerStatus() {
+    const serverHost = 'mc.omnistium.com';
+    const statusDot = document.getElementById('server-status-dot');
+    const statusText = document.getElementById('server-status-text');
+
+    if (!statusDot || !statusText) return;
+
+    fetch(`https://api.mcsrvstat.us/2/${serverHost}`)
+        .then(response => response.json())
+        .then(data => {
+            if (data.online) {
+                statusDot.style.background = '#10b981';
+                statusText.style.color = '#34d399';
+                statusText.innerText = `Онлайн — ${data.players.online}/${data.players.max} гравців`;
+            } else {
+                statusDot.style.background = '#ef4444';
+                statusText.innerText = 'Офлайн';
+                statusText.style.color = '#f87171';
+            }
+        })
+        .catch(error => {
+            statusDot.style.background = '#f59e0b';
+            statusText.innerText = 'Помилка перевірки';
+            statusText.style.color = '#fbbf24';
+        });
 }
