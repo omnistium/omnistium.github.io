@@ -34,8 +34,15 @@
             <h1 style="font-size: 3.5rem; margin-bottom: 1rem; font-weight: 800; background: linear-gradient(135deg, var(--text-main) 40%, #a78bfa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -0.01em;">OMNISTIUM</h1>
             <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 2rem; font-size: 1.05rem; line-height: 1.6;">Геополітичний сервер на версії 1.21.1 NeoForge. Створюй корпорації, будуй дирижаблі та веди індустріальні війни.</p>
             
-            <div class="ip-box" onclick="copyIP()">
-                <span id="server-ip"><i class="fas fa-terminal" style="color: var(--purple-accent); margin-right: 0.5rem; font-size: 0.85rem;"></i>mc.omnistium.com</span>
+            <div class="ip-box" onclick="copyIP()" style="flex-direction: column; align-items: flex-start; gap: 0.8rem;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; width: 100%;">
+                    <i class="fas fa-terminal" style="color: var(--purple-accent); font-size: 0.85rem;"></i>
+                    <span id="server-ip">mc.omnistium.com</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem;">
+                    <span id="server-status-dot" style="width: 8px; height: 8px; border-radius: 50%; background: #f59e0b; display: inline-block;"></span>
+                    <span id="server-status-text" style="color: var(--text-muted);">Перевірка статусу...</span>
+                </div>
             </div>
             
             <div style="margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: center;">
