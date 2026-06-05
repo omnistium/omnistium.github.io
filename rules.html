@@ -31,9 +31,14 @@
 
     <div class="rules-layout">
         <aside class="rules-sidebar">
+            <div class="sidebar-category">Загальне</div>
+            <ul class="sidebar-links">
+                <li><a href="#" class="sidebar-id active" data-target="general-rules"><i class="fas fa-book-open" style="margin-right: 0.4rem; color: var(--text-muted);"></i>Головна сторінка</a></li>
+            </ul>
+
             <div class="sidebar-category">Minecraft правила</div>
             <ul class="sidebar-links">
-                <li><a href="#" class="sidebar-id active" data-target="mc-behavior">1. Поведінка та чесна гра</a></li>
+                <li><a href="#" class="sidebar-id" data-target="mc-behavior">1. Поведінка та чесна гра</a></li>
                 <li><a href="#" class="sidebar-id" data-target="mc-building">2. Території та будівництво</a></li>
             </ul>
 
@@ -47,18 +52,51 @@
                 <li><a href="#" class="sidebar-id" data-target="rp-government">6. Центральний Уряд</a></li>
                 <li><a href="#" class="sidebar-id" data-target="rp-parliament">7. Політична система</a></li>
                 <li><a href="#" class="sidebar-id" data-target="rp-war">8. Війна та Конфлікти</a></li>
-                <li><a href="#" class="sidebar-id" data-target="rp-battles">9. Регламент боїв</a></li>
-                <li><a href="#" class="sidebar-id" data-target="rp-sieges">10. Регламент облог</a></li>
-                <li><a href="#" class="sidebar-id" data-target="rp-camps">11. Військові табори</a></li>
-                <li><a href="#" class="sidebar-id" data-target="rp-organizations">12. Організації та Найманці</a></li>
-                <li><a href="#" class="sidebar-id" data-target="rp-forbidden">13. Заборонені предмети</a></li>
-                <li><a href="#" class="sidebar-id" data-target="rp-admin-staff">14. RP-Адміністрація</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-sabotage">9. Диверсії</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-battles">10. Регламент боїв</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-sieges">11. Регламент облог</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-camps">12. Військові табори</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-organizations">13. Організації та Найманці</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-forbidden">14. Заборонені предмети</a></li>
+                <li><a href="#" class="sidebar-id" data-target="rp-admin-staff">15. RP-Адміністрація</a></li>
             </ul>
         </aside>
 
         <main class="rules-content">
 
-            <section id="mc-behavior" class="rules-section active">
+            <!-- ===================== ГОЛОВНА СТОРІНКА ПРАВИЛ ===================== -->
+            <section id="general-rules" class="rules-section active">
+                <h2>ПРАВИЛА OMNISTIUM</h2>
+                <div class="rules-meta">Ласкаво просимо до офіційного зведення правил нашого сервера.</div>
+
+                <div class="rule-block" style="border-left: 3px solid var(--purple-accent); background: rgba(124, 58, 237, 0.05);">
+                    <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.05rem;"><i class="fas fa-bullhorn" style="color: var(--purple-accent); margin-right: 0.5rem;"></i>Останнє оновлення (05.06.2026, 22:00)</p>
+                    <ul style="padding-left: 1.2rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+                        <li>Створено нову категорію <strong>«9. Диверсії»</strong> в RP правилах.</li>
+                        <li>Оновлено категорію <strong>«8. Війна та Конфлікти»</strong> (додано "чисельні диверсії" до переліку причин для війни).</li>
+                    </ul>
+                </div>
+
+                <div class="rule-block">
+                    <p style="margin-bottom: 1.5rem; color: var(--text-main);">Оберіть категорію правил для детального ознайомлення. Пам'ятайте, що незнання правил не звільняє від відповідальності за their порушення.</p>
+                    
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <button onclick="document.querySelector('.sidebar-links [data-target=\'mc-behavior\']').click()" style="padding: 1rem 1.5rem; background: var(--bg-lighter); border: 1px solid var(--border-color); color: var(--text-main); border-radius: 0.5rem; cursor: pointer; display: flex; align-items: center; gap: 0.75rem; font-family: inherit; font-size: 1rem; font-weight: 600; transition: background 0.2s, border-color 0.2s;" onmouseover="this.style.borderColor='var(--purple-accent)'" onmouseout="this.style.borderColor='var(--border-color)'">
+                            <i class="fas fa-cubes" style="color: #38bdf8; font-size: 1.2rem;"></i> 
+                            Minecraft Правила
+                        </button>
+                        
+                        <button onclick="document.querySelector('.sidebar-links [data-target=\'rp-principles\']').click()" style="padding: 1rem 1.5rem; background: var(--bg-lighter); border: 1px solid var(--border-color); color: var(--text-main); border-radius: 0.5rem; cursor: pointer; display: flex; align-items: center; gap: 0.75rem; font-family: inherit; font-size: 1rem; font-weight: 600; transition: background 0.2s, border-color 0.2s;" onmouseover="this.style.borderColor='var(--purple-accent)'" onmouseout="this.style.borderColor='var(--border-color)'">
+                            <i class="fas fa-scroll" style="color: #a855f7; font-size: 1.2rem;"></i> 
+                            RP Правила
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===================== MINECRAFT ПРАВИЛА ===================== -->
+
+            <section id="mc-behavior" class="rules-section">
                 <h2>1. ПОВЕДІНКА ТА ЧЕСНА ГРА</h2>
                 <div class="rules-meta">Основні правила поведінки на сервері для всіх гравців.</div>
 
@@ -202,6 +240,8 @@
                 </div>
             </section>
 
+            <!-- ===================== RP ПРАВИЛА ===================== -->
+
             <section id="rp-principles" class="rules-section">
                 <h2>1. ЗАГАЛЬНІ ПРИНЦИПИ</h2>
                 <div class="rule-block" style="border-left: 3px solid var(--purple-accent); background: rgba(124, 58, 237, 0.02);">
@@ -223,7 +263,7 @@
                     <div>
                         <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.05em;">RP-логіка</p>
                         <p>Будь-яка дія має мати <span style="color: var(--purple-accent); font-weight: 600;">RP-причину</span></p>
-                        <p>Заборонені нелогічні або "ігрові" дії без обґрунтування</p>
+                        <p>Заборонені нелогичні або "ігрові" дії без обґрунтування</p>
                         <p>Світ розвивається через історію та наслідки дій гравців</p>
                     </div>
                 </div>
@@ -407,7 +447,7 @@
                 <div class="rule-block">
                     <span class="rule-number">7.1</span>
                     <div>
-                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem;"><i class="fas fa-gavel" style="color: var(--purple-accent); margin-right: 0.5rem;"></i>Генеральна Рада</p>
+                        <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem;"><i class="fas fa-gavel" style="color: var(--purple-accent); margin-right: 0.5rem;"></i>Генеральна Рада Комітету</p>
                         <p style="margin-bottom: 0.5rem;">Рада є вищим міжнародним парламентом.</p>
                         <p style="margin-bottom: 0.5rem;">Кількість місць (мандатів) у Раді обмежена — <span style="color: var(--purple-accent); font-weight: 600;">15 мандатів</span>.</p>
                         <p style="margin-bottom: 0.25rem;">Рада складається з:</p>
@@ -455,7 +495,6 @@
                 </div>
             </section>
 
-            <!-- ОНОВЛЕНИЙ РОЗДІЛ 8. ВІЙНА ТА КОНФЛІКТИ -->
             <section id="rp-war" class="rules-section">
                 <h2>8. ВІЙНА ТА КОНФЛІКТИ</h2>
                 <div class="rule-block" style="border-left: 3px solid #ef4444;">
@@ -464,11 +503,12 @@
 
                 <div class="rule-block">
                     <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-main);"><i class="fas fa-skull-crossbones" style="color: #ef4444; margin-right: 0.5rem;"></i>Причини для війни:</p>
-                    <ul style="padding-left: 1.2rem; color: var(--text-muted);">
+                    <ul style="padding-left: 1.2rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.25rem;">
                         <li>Територіальні суперечки (офіційні претензії на землі).</li>
                         <li>Порушення міжнародних договорів або ультиматумів.</li>
                         <li>Економічна блокада або загроза безпеці держави.</li>
                         <li>Захист союзника за наявності офіційного оборонного пакту.</li>
+                        <li>Чисельні диверсії.</li>
                     </ul>
                 </div>
 
@@ -488,26 +528,55 @@
                 </div>
             </section>
 
-            <section id="rp-battles" class="rules-section">
-                <h2>9. РЕГЛАМЕНТ БОЇВ</h2>
+            <section id="rp-sabotage" class="rules-section">
+                <h2>9. ДИВЕРСІЇ</h2>
                 <div class="rule-block">
-                    <span class="rule-number">9.1</span>
+                    <p><strong style="color: var(--text-main);">Диверсії</strong> — коротка швидка операція з чіткою RP-метою.</p>
+                </div>
+
+                <div class="rule-block" style="border-left: 3px solid #ef4444;">
+                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: #ef4444;"><i class="fas fa-exclamation-triangle" style="margin-right: 0.5rem;"></i>ОБМЕЖЕННЯ:</p>
+                    <ul style="padding-left: 1.2rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+                        <li><strong style="color: var(--text-main);">Максимальна тривалість:</strong> 30 хвилин.</li>
+                        <li><strong style="color: var(--text-main);">Частота:</strong> 1 диверсія на 3 доби.</li>
+                        <li>Можуть проводитися лише при політичних відносинах <strong style="color: #f97316;">-2</strong> або <strong style="color: #ef4444;">-3</strong>.</li>
+                        <li>Одна конкретна ціль (об’єкт або персонаж).</li>
+                        <li>Для знищення інфраструктури — максимум <strong style="color: var(--text-main);">5 динаміту</strong> або <strong style="color: var(--text-main);">1 фугасний заряд</strong>.</li>
+                        <li>Заборонено масове руйнування міста.</li>
+                        <li>Заборонено знищувати промисловість та механізми.</li>
+                        <li>Заборонені хаотичні диверсії без мети.</li>
+                    </ul>
+                </div>
+
+                <div class="rule-block" style="border-left: 3px solid #3b82f6;">
+                    <p style="font-weight: 600; margin-bottom: 0.5rem; color: #3b82f6;"><i class="fas fa-clipboard-check" style="margin-right: 0.5rem;"></i>ПІСЛЯ ДИВЕРСІЇ:</p>
+                    <ul style="padding-left: 1.2rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+                        <li>Сторона, яка влаштувала диверсію, має зробити RP-Пост.</li>
+                        <li>Наслідки фіксуються адміністрацією.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="rp-battles" class="rules-section">
+                <h2>10. РЕГЛАМЕНТ БОЇВ</h2>
+                <div class="rule-block">
+                    <span class="rule-number">10.1</span>
                     <p>Усі масштабні бої (польові битви, засади на колони) мають бути заздалегідь узгоджені між лідерами сторін та РП-адміністрацією щодо дати, часу та списку учасників.</p>
                 </div>
 
                 <div class="rule-block" style="border-left: 3px solid #ef4444;">
-                    <span class="rule-number" style="color: #ef4444;">9.2</span>
+                    <span class="rule-number" style="color: #ef4444;">10.2</span>
                     <p>Під час офіційного бою кожен учасник має лише <span style="color: #ef4444; font-weight: 600;">одне життя</span>. Гравець, який загинув, не має права повертатися на місце бою до його повного завершення.</p>
                 </div>
 
                 <div class="rule-block">
-                    <span class="rule-number">9.3</span>
+                    <span class="rule-number">10.3</span>
                     <p>Сторона, що перемогла в бою, отримує право на збір луту з поля бою та захоплення техніки, яка была виведена з ладу.</p>
                 </div>
             </section>
 
             <section id="rp-sieges" class="rules-section">
-                <h2>10. РЕГЛАМЕНТ ОБЛОГ</h2>
+                <h2>11. РЕГЛАМЕНТ ОБЛОГ</h2>
                 <div class="rule-block">
                     <p>Облога міста або фортеці — це тривала військова операція, яка проходить у <span style="color: var(--purple-accent); font-weight: 600;">5 обов'язкових фаз</span>:</p>
                 </div>
@@ -518,7 +587,7 @@
                 </div>
 
                 <div class="rule-block">
-                    <span class="rule-number" style="color: #f97316;">Фаза 2</span>
+                    <span class="rule-number" style="color: #f97316;">Phase 2</span>
                     <p><strong>Артилерійська підготовка (Бомбардування):</strong> Атакуючі можуть використовувати дальнобійну зброю або техніку для знищення укріплень. Захисники можуть відповідати вогнем зі стін.</p>
                 </div>
 
@@ -529,7 +598,7 @@
 
                 <div class="rule-block">
                     <span class="rule-number" style="color: #38bdf8;">Фаза 4</span>
-                    <p><strong>Бій у місті (Зачистка):</strong> Бойові дії переносяться всередину міста. Захисники можуть відступати до укріплених позицій всередині.</p>
+                    <p><strong>Бій у місті (Зачистка):</strong> Бойові дії переносяться всередину міста. Захисники могут відступати до укріплених позицій всередині.</p>
                 </div>
 
                 <div class="rule-block">
@@ -538,15 +607,15 @@
                 </div>
 
                 <div class="rule-block">
-                    <span class="rule-number">10.1</span>
+                    <span class="rule-number">11.1</span>
                     <p>Під час облоги правила відродження (респавну) регулюються окремими технічними налаштуваннями сервера, але повернення в бій дозволено лише через визначені РП-точки (табори або тилові міста).</p>
                 </div>
             </section>
 
             <section id="rp-camps" class="rules-section">
-                <h2>11. ВІЙСЬКОВА ТАБОРИ</h2>
+                <h2>12. ВІЙСЬКОВА ТАБОРИ</h2>
                 <div class="rule-block">
-                    <span class="rule-number">11.1</span>
+                    <span class="rule-number">12.1</span>
                     <div>
                         <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem;"><i class="fas fa-campground" style="color: #f97316; margin-right: 0.5rem;"></i>Функції табору:</p>
                         <ul style="padding-left: 1.2rem; color: var(--text-muted);">
@@ -558,7 +627,7 @@
                 </div>
 
                 <div class="rule-block">
-                    <span class="rule-number">11.2</span>
+                    <span class="rule-number">12.2</span>
                     <div>
                         <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem;"><i class="fas fa-exclamation-triangle" style="color: #ef4444; margin-right: 0.5rem;"></i>Обмеження табору:</p>
                         <ul style="padding-left: 1.2rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.25rem;">
@@ -575,9 +644,9 @@
             </section>
 
             <section id="rp-organizations" class="rules-section">
-                <h2>12. ВІЙСЬКОВІ ОРГАНІЗАЦІЇ ТА НАЙМАНЦІ</h2>
+                <h2>13. ВІЙСЬКОВІ ОРГАНІЗАЦІЇ ТА НАЙМАНЦІ</h2>
                 <div class="rule-block">
-                    <span class="rule-number">12.1</span>
+                    <span class="rule-number">13.1</span>
                     <div>
                         <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem;">Військові організації:</p>
                         <p style="margin-bottom: 0.5rem;">Мінімальний склад не обов'язковий</p>
@@ -592,7 +661,7 @@
                 </div>
 
                 <div class="rule-block">
-                    <span class="rule-number">12.2</span>
+                    <span class="rule-number">13.2</span>
                     <div>
                         <p style="font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.9rem;">Найманці:</p>
                         <p style="margin-bottom: 0.5rem;">Гравець може бути одиночним найманцем або частиною організації.</p>
@@ -608,7 +677,7 @@
             </section>
 
             <section id="rp-forbidden" class="rules-section">
-                <h2>13. ЗАБОРОНЕНІ ПРЕДМЕТИ ПІД ЧАС БОЇВ, ОБЛОГ ТА РЕЙДІВ</h2>
+                <h2>14. ЗАБОРОНЕНІ ПРЕДМЕТИ ПІД ЧАС БОЇВ, ОБЛОГ ТА РЕЙДІВ</h2>
                 <div class="rule-block" style="border-left: 3px solid #ef4444; background: rgba(239, 68, 68, 0.01);">
                     <p style="font-weight: 600; margin-bottom: 0.5rem; color: #ef4444;"><i class="fas fa-ban" style="margin-right: 0.5rem;"></i>Заборонено:</p>
                     <ul style="padding-left: 1.2rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
@@ -621,7 +690,7 @@
             </section>
 
             <section id="rp-admin-staff" class="rules-section">
-                <h2>14. RP-АДМІНІСТРАЦІЯ</h2>
+                <h2>15. RP-АДМІНІСТРАЦІЯ</h2>
                 <div class="rule-block" style="border-left: 3px solid var(--purple-accent);">
                     <p>RP-Адміністрація проекту є вищим контрольним та апеляційним органом, що забезпечує дотримання RP-атмосфери ігрового процесу.</p>
                 </div>
